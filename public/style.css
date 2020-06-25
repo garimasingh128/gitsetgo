@@ -1,7 +1,8 @@
 footer {
-    background-color: #222;
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
+    background-color: #1a1a1a;
+    font-family: cursive;
     bottom: 0;
     position: fixed;
     left: 0;
@@ -19,6 +20,6 @@ footer i {
 }
 
 footer a {
-    color: #3c97bf;
+    color: rgb(60, 255, 0);
     text-decoration: none;
 }

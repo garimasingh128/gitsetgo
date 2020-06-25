@@ -34,7 +34,7 @@ const Profile = () => {
             <i className="search icon"></i>
             <input
               className="prompt"
-              placeholder="search username here..."
+              placeholder="Whom you wanna stalk?"
               type="text"
               value={username}
               onChange={onChangeHandler}
@@ -48,9 +48,10 @@ const Profile = () => {
             onClick={submitHandler}
           >
             <i className="github icon"></i>
-            Search
+            Go ahead!
           </button>
           <center>
+            
             <DisplayCard
               style={{ marginTop: 100 }}
               data={data}

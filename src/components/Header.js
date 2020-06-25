@@ -14,7 +14,8 @@ const Header = () => {
           alt=""
         />{" "}
       </nav>
-      <spacer /> <nav class="navbar navbar-light bg-light">Git Set Go </nav>{" "}
+      <spacer /> <nav class="navbar navbar-light bg-light" ><a href="https://github.com/mrinal41298/gitsetgo">Git Set Go</a> </nav>{" "}
+      <spacer />  <spacer />  <spacer />  <spacer />  <spacer /> <center><nav class="navbar navbar-light bg-light"> <p style={{fontSize: 15 }}>An open-source Github contribution Timeline </p></nav></center>{" "}
     </NavbarC>
   );
 };
@@ -24,6 +25,7 @@ const NavbarC = styled.div`
   background: #1a1a1a;
   color: #ffffff;
   font-size: 25px;
+  font-family: cursive;
   display: flex;
   align-items: center;
   height: 100%;

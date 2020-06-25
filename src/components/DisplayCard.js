@@ -2,7 +2,7 @@ import React from "react";
 
 const DisplayCard = ({ data, repositories }) => {
   return (
-    <div class="ui card" style={{ marginTop: 50, width: 600 }}>
+    <div class="ui card" style={{ marginTop: 50, width: 600, marginBottom: 150 }}>
       <div class="card">
         <div class="blurring dimmable image">
           <div class="ui dimmer">
