@@ -6,11 +6,11 @@ const Profile = () => {
   const [username, setUsername] = useState("");
   const [repositories, setRepositories] = useState([]);
 
-  const onChangeHandler = e => {
+  const onChangeHandler = (e) => {
     setUsername(e.target.value);
   };
 
-  const submitHandler = async e => {
+  const submitHandler = async (e) => {
     e.preventDefault();
 
     const profile = await fetch(`https://api.github.com/users/${username}`);
@@ -41,7 +41,8 @@ const Profile = () => {
             />
           </div>
 
-          <button style={{marginLeft: 20}}
+          <button
+            style={{ marginLeft: 20 }}
             className="ui violet button"
             type="submit"
             onClick={submitHandler}
@@ -50,7 +51,11 @@ const Profile = () => {
             Search
           </button>
           <center>
-          <DisplayCard style={{marginTop: 100}} data={data} repositories={repositories} />
+            <DisplayCard
+              style={{ marginTop: 100 }}
+              data={data}
+              repositories={repositories}
+            />
           </center>
         </div>
       </div>

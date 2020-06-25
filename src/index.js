@@ -1,15 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 import { usePromiseTracker } from "react-promise-tracker";
-import Loader from 'react-loader-spinner';
+import Loader from "react-loader-spinner";
 
 // const LoadingIndicator = props => {
 //   const { promiseInProgress } = usePromiseTracker();
 
-//   return promiseInProgress && 
+//   return promiseInProgress &&
 //       <h1>Hey some async call in progress ! </h1>;
 //     <div
 //       style={{
@@ -24,13 +24,11 @@ import Loader from 'react-loader-spinner';
 //     </div>
 // };
 
-ReactDOM.render( <
-    React.StrictMode >
-    <
-    App / >
-    <
-    /React.StrictMode>,
-    document.getElementById('root')
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
