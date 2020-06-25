@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import logo from "./daftpunktocat.gif";
 const Header = () => {
     return ( <
-        NavbarC >
-        <
+        NavbarC > <
         nav class = "navbar navbar-light bg-light" >
         <
         img src = { logo }
@@ -18,7 +17,7 @@ const Header = () => {
         nav class = "navbar navbar-light bg-light" >
 
         Git Set Go < /
-        nav > < /NavbarC >
+        nav > < /NavbarC>
     );
 };
 export default Header;
