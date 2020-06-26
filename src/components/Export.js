@@ -1,28 +1,21 @@
-import React, { Component, PropTypes } from "react";
-//import logo from './logo.svg';
-import "./App.css";
-import ReactDOM from "react-dom";
-import Pdf from "react-to-pdf";
+import React, {Component, PropTypes} from 'react';
 
 // download html2canvas and jsPDF and save the files in app/ext, or somewhere else
 // the built versions are directly consumable
 // import {html2canvas, jsPDF} from 'app/ext';
 import html2canvas from 'html2canvas';
 import * as jsPDF from 'jspdf'
-import Profile from "./components/Profile";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
+import Profile from '../components/Profile';
 
 
-const ref = React.createRef();
 
-
-export default class App extends Component {
+export default class Export extends Component {
   constructor(props) {
     super(props);
   }
 
-   printDocument() {
+  printDocument() {
     const input = document.getElementById('divToPrint');
     html2canvas(input)
       .then((canvas) => {
@@ -35,35 +28,14 @@ export default class App extends Component {
     ;
   }
 
-  
   render() {
-    return (<div className="App">
-
-      <Header/>
-     
-
-       <Profile/>
-        
-      
-      <Footer>
-     
-      </Footer>
-      
-        {/* <Header />
-         
-     <div id="divToPrint" className="mt4" >
-    
-      <Profile />
-      
-      </div>
-    
-      
-      <Footer/>
-       <div className="mb5">
+    return (<div>
+      <div className="mb5">
         <button onClick={this.printDocument}>Print</button>
       </div>
-      */}
+      <div id="divToPrint" className="mt4" >
+       
+      </div>
     </div>);
   }
 }
-

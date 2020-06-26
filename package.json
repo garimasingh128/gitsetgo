@@ -3,16 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
     "github-profile-card": "^3.1.0",
+    "html2canvas": "^1.0.0-rc.5",
+    "jspdf": "^1.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-loader-spinner": "^3.1.14",
     "react-promise-tracker": "^2.1.0",
     "react-scripts": "3.4.1",
+    "react-to-pdf": "0.0.11",
     "styled-components": "^5.1.1"
   },
   "scripts": {

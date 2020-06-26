@@ -14,7 +14,7 @@ const DisplayCard = ({ data, repositories }) => {
               </div>{" "}
             </div>{" "}
           </div>{" "}
-          <img src={data.avatar_url} alt={data.avatar_url}></img>{" "}
+          <img src={data.avatar_url} alt={data.avatar_url} style={{marginTop: 30}}></img>{" "}
         </div>{" "}
         <div class="content">
           <h1 class="ui Black header"> Profile Card </h1>{" "}
