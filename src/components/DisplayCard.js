@@ -16,7 +16,7 @@ import "./js/popper.js";
 // import "./js/script.js";
 
 import ReactDOM from "react-dom";
-import Pdf from "react-to-pdf";
+import ReactToPdf from "react-to-pdf";
 
 // get our fontawesome imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -32,19 +32,15 @@ const options = {
 
 const DisplayCard = ({ data, repositories }) => {
   return (
-    
-    
-   
-
 
     <div className="container-fluid overcover" style={{marginBottom: 100}} >
  
 
-      {data.name ? (       <div><Pdf targetRef={ref} filename="timeline_github.pdf" options={options} x={-1}>
+      {data.name ? (       <div><ReactToPdf targetRef={ref} filename="resume_github.pdf" options={options} scale={0.7}>
         {({ toPdf }) => <button  style={{ marginLeft: 20, marginTop: 20 }}
             className="ui red button"
             type="submit" onClick={toPdf}><FontAwesomeIcon icon={faThumbsUp}></FontAwesomeIcon> Generate Pdf</button>}
-      </Pdf>
+      </ReactToPdf>
       <div className="container profile-box" ref={ref}>
             <div className="row">
                 <div className="col-md-4 left-co">
@@ -79,7 +75,7 @@ const DisplayCard = ({ data, repositories }) => {
                         <h4 className="ltitle">Twitter</h4>
                         <ul className="row social-link no-margin">
                             
-                            <li><i className="fab fa-twitter">{data.twitter_username}</i></li>
+                            <li> @{data.twitter_username}</li>
                         </ul>
                         <h4 className="ltitle">Organisations</h4>
 
@@ -92,9 +88,9 @@ const DisplayCard = ({ data, repositories }) => {
                      
                        <h4 className="ltitle">Following: <i className="fas fa-pencil-alt"></i>{data.following}</h4>
                        
-                       <h4 className="ltitle">Profile created on:{" "} <i className="fas fa-pencil-alt"></i>{data.created_at}</h4>
+                       <h4 className="ltitle">Profile created on:{" "}<br></br> <i className="fas fa-pencil-alt"></i>{data.created_at}</h4>
                      
-                     <h4 className="ltitle">Profile last updated on:{" "} <i className="fas fa-pencil-alt"></i>{data.updated_at}</h4>
+                     <h4 className="ltitle">Profile last updated on:{" "}<br></br> <i className="fas fa-pencil-alt"></i>{data.updated_at}</h4>
                      
                     </div>
                 </div>
@@ -122,9 +118,13 @@ const DisplayCard = ({ data, repositories }) => {
                             <div classNameName="item">
                               <i classNameName="large github middle aligned icon"></i>
                               <div classNameName="content">
+                                <ul>
+                              <li>  
                                 <a href={repo.html_url} classNameName="header" target="_blank">
-                                  {repo.name}
+                                {repo.name}
                                 </a>
+                                </li>
+                                </ul>
                               </div>
                             </div>
                           </div>
