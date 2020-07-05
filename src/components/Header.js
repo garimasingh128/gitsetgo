@@ -12,12 +12,12 @@ const Header = () => {
           height="40"
           class="d-inline-block align-top"
           alt=""
-        />{" "}
+        />
       </nav>
-      <spacer />{" "}
+     {" "}
       <nav class="navbar navbar-light " style={{ background: "#343a40" }}>
         <a
-          href="https://github.com/mrinal41298/gitsetgo"
+          href="./"
           style={{ color: "#ffffff" }}
         >
           Git Set Go
@@ -28,7 +28,7 @@ const Header = () => {
         <nav class="navbar navbar-dark bg-dark">
           {" "}
           <p style={{ fontSize: 15 }}>
-            An open-source Github contribution Timeline{" "}
+            A Personalised Github Resume{" "}
           </p>
         </nav>
       </center>{" "}

@@ -4,10 +4,8 @@ import "./css/bootstrap.min.css";
 import "./css/bootstrap.min.css.map";
 // import "./css/fontawsom-all.min.css";
 import "./css/style.css";
+import undraw from "./undraw2.svg";
 import "./css/style.css.map";
-
-import garima from "./me.jpeg";
-import mrinal from "./mr.jpg";
 
 import "./js/popper.js";
 // import "./js/jquery-3.2.1.min.js";
@@ -197,114 +195,9 @@ const DisplayCard = ({ data, repositories }) => {
           </div>
         </div>
       ) : (
-        <div>
-          {" "}
-          <div className="ui card" style={{ marginTop: 50, width: 600 }}>
-            <div className="card">
-              <div className="blurring dimmable image">
-                <div className="ui dimmer">
-                  <div className="content">
-                    <div className="center">
-                      <a href="https://github.com/garimasingh128">
-                        <div className="ui inverted button">
-                          {" "}
-                          Github Profile{" "}
-                        </div>{" "}
-                      </a>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                </div>{" "}
-                <img
-                  src={garima}
-                  alt={data.avatar_url}
-                  style={{ marginTop: 30, width: 100, height: 150 }}
-                ></img>{" "}
-              </div>{" "}
-              <div className="content">
-                <h1 className="ui violet inverted header">Garima Singh </h1>{" "}
-                <div className="meta">
-                  <h2 className="ui grey inverted header">
-                    {" "}
-                    Location: Somewhere in the Universe!{" "}
-                  </h2>{" "}
-                </div>{" "}
-                <div className="description">
-                  <h3 className="ui brown inverted header">
-                    {" "}
-                    Sophomore CSE Undergraduate. Web and Android Dev.
-                    Inquisitive. Keen.{" "}
-                  </h3>{" "}
-                </div>{" "}
-                <div className="description">
-                  <h3 className="ui black header">
-                    {" "}
-                    Companies: @hackslash-nitp @NITP @Trailblazer-Together{" "}
-                  </h3>{" "}
-                </div>
-                <div className="extra content">
-                  <a>
-                    <i className="twitter icon"> </i>
-                    Twitter: GarimaS95581152{" "}
-                  </a>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
+        <div >
+          <img src={undraw} style={{width: 1500, height: 400, marginTop: 40}}></img>
           </div>
-          <div
-            className="ui card"
-            style={{ marginTop: 50, width: 600, marginBottom: 50 }}
-          >
-            <div className="card">
-              <div className="blurring dimmable image">
-                <div className="ui dimmer">
-                  <div className="content">
-                    <div className="center">
-                      <a href="https://github.com/garimasingh128">
-                        <div className="ui inverted button">
-                          {" "}
-                          Github Profile{" "}
-                        </div>{" "}
-                      </a>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                </div>{" "}
-                <img
-                  src={mrinal}
-                  alt={data.avatar_url}
-                  style={{ marginTop: 30, width: 100, height: 150 }}
-                ></img>{" "}
-              </div>{" "}
-              <div className="content">
-                <h1 className="ui violet inverted header">Garima Singh </h1>{" "}
-                <div className="meta">
-                  <h2 className="ui grey inverted header">
-                    {" "}
-                    Location: Somewhere in the Universe!{" "}
-                  </h2>{" "}
-                </div>{" "}
-                <div className="description">
-                  <h3 className="ui brown inverted header">
-                    {" "}
-                    Sophomore CSE Undergraduate. Web and Android Dev.
-                    Inquisitive. Keen.{" "}
-                  </h3>{" "}
-                </div>{" "}
-                <div className="description">
-                  <h3 className="ui black header">
-                    {" "}
-                    Companies: @hackslash-nitp @NITP @Trailblazer-Together{" "}
-                  </h3>{" "}
-                </div>
-                <div className="extra content">
-                  <a>
-                    <i className="twitter icon"> </i>
-                    Twitter: GarimaS95581152{" "}
-                  </a>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>
-        </div>
       )}
     </div>
   );
