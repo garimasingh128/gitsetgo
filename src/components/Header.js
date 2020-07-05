@@ -14,15 +14,30 @@ const Header = () => {
           alt=""
         />{" "}
       </nav>
-      <spacer /> <nav class="navbar navbar-light bg-light" ><a href="https://github.com/mrinal41298/gitsetgo">Git Set Go</a> </nav>{" "}
-      <spacer />  <spacer />  <spacer />  <spacer />  <spacer /> <center><nav class="navbar navbar-dark bg-dark"> <p style={{fontSize: 15 }}>An open-source Github contribution Timeline </p></nav></center>{" "}
+      <spacer />{" "}
+      <nav class="navbar navbar-light " style={{ background: "#343a40" }}>
+        <a
+          href="https://github.com/mrinal41298/gitsetgo"
+          style={{ color: "#ffffff" }}
+        >
+          Git Set Go
+        </a>{" "}
+      </nav>{" "}
+      <spacer /> <spacer /> <spacer /> <spacer /> <spacer />{" "}
+      <center>
+        <nav class="navbar navbar-dark bg-dark">
+          {" "}
+          <p style={{ fontSize: 15 }}>
+            An open-source Github contribution Timeline{" "}
+          </p>
+        </nav>
+      </center>{" "}
     </NavbarC>
   );
 };
 export default Header;
-
 const NavbarC = styled.div`
-  background: #343A40;
+  background: #343a40;
   color: #ffffff;
   font-size: 25px;
   font-family: cursive;
