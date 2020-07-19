@@ -27,6 +27,32 @@
 
 A Github Resume generator 👨‍💻👩‍ to create your own personalised resume based on your Github profile. 🔎 This tool lets you have your resume on a single click.
 
+
+# This project is a part of Hakin Codes 2020 👣
+  OPEN SOURCE CONTEST - Hakin Codes
+  ### About HakinCodes 2020 💻
+  HakinCodes is founded with a vision to impart technical knowledge with practical implementations to all the students and developers around.
+
+At HakinCodes it's our mission to provide guidance to the participants from the mentors who are highly skilled and experienced in particular stacks whether be it technical or non-technical.
+
+At HakinCodes we are always here to solve any issues regarding the projects and providing golden opportunities to everyone who wants to improve their skills.
+
+HakinCodes would always provide cutting edge experience to every developer in moving a step closer towards achieving their dreams.
+
+HakinCodes will always try to maintain a positive attitude towards achieving higher goals and objectives.
+
+At HakinCodes we maintain a trustworthy and healthy environment and respect each other's privacy 
+
+<div align="center">
+
+<img src="HakinCodes Logo.png" width="300" height="300">
+</div>
+
+
+
+
+⭐ [Check out the website of HackinCodes 2020](https://hakincodes.tech)
+
 ## 📋 Table of Contents
  ➡️   [Vision](#-vision)
 
