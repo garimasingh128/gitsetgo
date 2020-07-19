@@ -73,6 +73,8 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
  ➡️   [Contributing](#-contributing)
  
  ➡️   [Owner](#-owner)
+ 
+ ➡️   [How to run it locally?](#-Running-it-locally)
 
 
 
@@ -159,7 +161,7 @@ Please adhere towards our [code-of-conduct.md](code-of-conduct.md).
 
 ## 👬 Owner
 
-<a href="https://github.com/garimasingh128"><img src="https://avatars3.githubusercontent.com/u/44302373?s=460&u=efaafa72f4d83d40b66fc68258d14cebbf1d7de0&v=4" width="100px;" alt=""/><br /><sub><b>Garima Singh</b></sub></a><br />
+<a href="https://github.com/garimasingh128"><img src="https://avatars3.githubusercontent.com/u/44302373?s=460&u=efaafa72f4d83d40b66fc68258d14cebbf1d7de0&v=4" width="100px;" alt=""/><br /><sub><b>Garima Singh</b></sub></a><br/>
 <a href="https://github.com/mrinal41298"><img src="https://avatars3.githubusercontent.com/u/55679963?s=460&u=66c9d1ec2ce9183bb517311a4f5ff32286e4df72&v=4" width="100px;" alt=""/><br /><sub><b>Mrinal Kumar</b></sub></a><br />
 
 
@@ -167,7 +169,7 @@ Please adhere towards our [code-of-conduct.md](code-of-conduct.md).
 
 ## ❤️ Thanks to our awesome contributors.
 
-## ✨ Finally, Running it locally
+## ✨ Running it locally
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
