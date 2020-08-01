@@ -2,7 +2,7 @@
 # 👣 Git Set Go
 ### 🧐 A Github profile resume generator. ✨
 
-![Demo](demo.gif)
+![Demo](./demo/demo.gif)
 
 
 
@@ -22,7 +22,7 @@
 
 <div align="center">
 
-<img src="ss.png" width="600">
+<img src="./demo/ss.png" width="600">
 </div>
 
 A Github Resume generator 👨‍💻👩‍ to create your own personalised resume based on your Github profile. 🔎 This tool lets you have your resume on a single click.
@@ -45,7 +45,7 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
 
 <div align="center">
 
-<img src="HakinCodes Logo.png" width="300" height="300">
+<img src="./demo/HakinCodes Logo.png" width="300" height="300">
 </div>
 
 
