@@ -124,15 +124,35 @@ The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id
 ## 📝 Learning Resources
 
 Read these articles to get a quick grab on handling Github API's and other technologies used in the project:
+
+### Resources for learning React.js:
+- https://reactresources.com
+- https://reactjs.org/community/external-resources.html
+- https://reactjs.org/docs/getting-started.html
+- https://github.com/enaqx/awesome-react
+
+### Migrating from Rest API to GraphQL API:
+- https://developer.github.com/v4/guides/migrating-from-rest/
+- https://docs.github.com/en/graphql
+
+### Resources for Github APIs':
 - https://developer.github.com/v3/ 
 - https://developer.github.com/v4/ 
 - https://github.com/octokit/rest.js/ 
 - https://github.com/octokit/graphql.js
+
+### Resources for node.js:
+- https://nodejs.org/en/about/resources/
+- https://github.com/sindresorhus/awesome-nodejs
+- https://www.tutorialsteacher.com/nodejs/nodejs-resources
+
+### Resources for Prettier.io used in the project
 - [Prettier.io used in the project](https://prettier.io)
 
-
-Resources to learn Git:
--  https://try.github.io/
+### Resources to learn Git and Github:
+- https://try.github.io/
+- https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources
+- https://guides.github.com/activities/hello-world/
 
 ## ✨ Future Plans
 - Github Timeline 
