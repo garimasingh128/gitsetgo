@@ -1,6 +1,6 @@
 
 # 👣 Git Set Go
-### 🧐 A Github profile resume generator. ✨
+### 😃😃 A Github profile resume generator. ✨
 
 ![Demo](./demo/demo.gif)
 
