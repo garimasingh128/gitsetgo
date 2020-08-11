@@ -74,22 +74,32 @@ const DisplayCard = ({ data, repositories }) => {
                     <div> </div>
                   )}
 
-                  <div className="contact-box pb0">
+                  <div className="contact-box pb-3 d-flex justify-content-center ltitle">
                     <div className="icon">
                       <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>
                     </div>
                     <div className="detail">{data.location}</div>
                   </div>
 
-                  <h4 className="ltitle">Twitter</h4>
-                  <ul className="row social-link no-margin">
-                    <li> @{data.twitter_username}</li>
-                  </ul>
-                  <h4 className="ltitle">Organisations</h4>
-
-                  <div className="refer-cov">
-                    <b>{data.company}</b>
-                  </div>
+                  {
+                    data.twitter_username === null ? '' : 
+                    <div>
+                      <ul className="refer-cov">
+                        <li className="text-center"> @{data.twitter_username}</li>
+                      </ul>
+                      <h4 className="ltitle">Twitter</h4>
+                    </div>
+                  }
+                  
+                  {
+                    data.company === null ? '' : 
+                    <div>
+                      <div className="refer-cov">
+                        <b>{data.company}</b>
+                      </div>
+                      <h4 className="ltitle">Organisations</h4>
+                    </div>
+                  }                                                  
 
                   <h4 className="ltitle">
                     Followers: <i className="fas fa-pencil-alt"></i>
@@ -124,7 +134,7 @@ const DisplayCard = ({ data, repositories }) => {
                     <i className="far fa-user"></i>About
                   </h2>
                   <div className="about">
-                    <p>{data.bio}</p>
+                    <p className="text-center">{data.bio}</p>
                   </div>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>Public Repositories:{" "}
