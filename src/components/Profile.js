@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DisplayCard from "./DisplayCard";
+import image from "./not-found1.svg";
 
 
 
@@ -7,6 +8,7 @@ const Profile = () => {
   const [data, setData] = useState({});
   const [username, setUsername] = useState("");
   const [repositories, setRepositories] = useState([]);
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const onChangeHandler = (e) => {
     setUsername(e.target.value);
@@ -14,18 +16,24 @@ const Profile = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+    try{
+      const profile = await fetch(`https://api.github.com/users/${username}`);
 
-    const profile = await fetch(`https://api.github.com/users/${username}`);
-    const profileJson = await profile.json();
-    console.log(profileJson);
+      const profileJson = await profile.json();
+      console.log(profileJson);
 
-    const repositories = await fetch(profileJson.repos_url);
-    const repoJson = await repositories.json();
-    console.log(repoJson);
+      const repositories = await fetch(profileJson.repos_url);
+      const repoJson = await repositories.json();
+      console.log(repoJson);
 
-    if (profileJson) {
-      setData(profileJson);
-      setRepositories(repoJson);
+      if (profileJson) {
+        setData(profileJson);
+        setRepositories(repoJson);
+      }
+    }
+    catch(err){
+      console.log("Error!!!!");
+      setErrorMessage(true);
     }
   };
   return (
@@ -42,7 +50,6 @@ const Profile = () => {
               onChange={onChangeHandler}
             />
           </div>
-
           <button
             style={{ marginLeft: 20 }}
             className="ui violet button"
@@ -52,17 +59,31 @@ const Profile = () => {
             <i className="github icon"></i>
             Go ahead!
           </button>
-          
-          <center>
-            
-            <DisplayCard
-           
-              data={data}
-              repositories={repositories}
-            />
-          </center>
+          <div>
+            {errorMessage ? (
+              <center>
+                <img
+                  src={image}
+                  alt={image}
+                  style={{width: 1000, height: 300, marginTop: 40}}
+                  >
+                </img>
+                <h1 >User Not Found!!</h1>
+              </center>
+            ) : (
+              <center>
+
+                <DisplayCard
+
+                  data={data}
+                  repositories={repositories}
+                  />
+              </center>
+          )}
+          </div>
+
         </div>
-        
+
       </div>
     </>
   );
