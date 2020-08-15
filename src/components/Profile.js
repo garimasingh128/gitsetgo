@@ -65,7 +65,7 @@ const Profile = () => {
                 <img
                   src={image}
                   alt={image}
-                  style={{width: 1000, height: 300, marginTop: 40}}
+                  style={{width: 250, height: 100, marginTop: 40}}
                   >
                 </img>
                 <h1 >User Not Found!!</h1>
