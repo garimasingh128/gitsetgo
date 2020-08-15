@@ -4,7 +4,7 @@ import "./css/bootstrap.min.css";
 import "./css/bootstrap.min.css.map";
 // import "./css/fontawsom-all.min.css";
 import "./css/style.css";
-import undraw from "./undraw2.svg";
+import undraw from "./images/undraw2.svg";
 import "./css/style.css.map";
 
 import "./js/popper.js";
