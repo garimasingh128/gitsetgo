@@ -8,7 +8,7 @@ import Pdf from "react-to-pdf";
 // the built versions are directly consumable
 // import {html2canvas, jsPDF} from 'app/ext';
 import html2canvas from "html2canvas";
-import * as jsPDF from "jspdf";
+import * as JsPDF from "jspdf";
 import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -27,7 +27,7 @@ export default class App extends Component {
     html2canvas(input)
       .then((canvas) => {
         const imgData = canvas.toDataURL("image/png");
-        const pdf = new jsPDF();
+        const pdf = new JsPDF();
         pdf.addImage(imgData, "JPEG", 0, 0);
         // pdf.output('dataurlnewwindow');
         pdf.save("download.pdf");

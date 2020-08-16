@@ -4,7 +4,7 @@ import React, {Component, PropTypes} from "react";
 // the built versions are directly consumable
 // import {html2canvas, jsPDF} from "app/ext";
 import html2canvas from "html2canvas";
-import * as jsPDF from "jspdf";
+import * as JsPDF from "jspdf";
 
 import Profile from "../components/Profile";
 
@@ -20,7 +20,7 @@ export default class Export extends Component {
     html2canvas(input)
       .then((canvas) => {
         const imgData = canvas.toDataURL("image/png");
-        const pdf = new jsPDF();
+        const pdf = new JsPDF();
         pdf.addImage(imgData, "JPEG", 0, 0);
         // pdf.output("dataurlnewwindow");
         pdf.save("download.pdf");

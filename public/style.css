@@ -1,7 +1,7 @@
 footer {
   color: #fff;
   font-size: 15px;
-  background-color: #C26C53;
+  background-color: #c26c53;
   font-family: cursive;
   bottom: 0;
   position: fixed;
@@ -20,6 +20,6 @@ footer i {
 }
 
 footer a {
-  color: #6435C9;
+  color: #6435c9;
   text-decoration: none;
 }

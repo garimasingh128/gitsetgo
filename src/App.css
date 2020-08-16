@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
 }
 
 .App-logo {
@@ -8,15 +9,9 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App {
-  font-family: sans-serif;
-  text-align: center;
 }
 
 .box {
@@ -35,14 +30,14 @@
 @keyframes example {
   0% {
     color: red;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
   }
 
   25% {
     color: yellow;
     left: 200px;
-    top: 0px;
+    top: 0;
   }
 
   50% {
@@ -53,19 +48,19 @@
 
   75% {
     color: green;
-    left: 0px;
+    left: 0;
     top: 200px;
   }
 
   100% {
     color: red;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
   }
 }
 
 .App-header {
-  background-color: #343A40;
+  background-color: #343a40;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -80,7 +75,6 @@
 }
 
 @keyframes App-logo-spin {
-  
   from {
     transform: rotate(0deg);
   }
