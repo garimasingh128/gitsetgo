@@ -1927,9 +1927,15 @@
   }
 
   80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+    -webkit-transform: 
+      perspective(400px) 
+      scale3d(0.95, 0.95, 0.95) 
+      translate3d(0, 0, 0)
       rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+    transform: 
+      perspective(400px) 
+      scale3d(0.95, 0.95, 0.95) 
+      translate3d(0, 0, 0)
       rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
