@@ -125,19 +125,19 @@ const DisplayCard = ({ data, repositories }) => {
                   </h2>
                   <div className="about">
                     <p>{data.bio}</p>
-                  </div>
+                  </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>Public Repositories:{" "}
                     {data.public_repos}{" "}
-                  </h2><br></br>
+                  </h2><br></br><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>Public Gists:{" "}
                     {data.public_gists}{" "}
-                  </h2><br></br>
+                  </h2><br></br><br></br>
 
                   <h2 className="rit-titl">
                     <i className="fas fa-briefcase"></i>Repositories
-                  </h2><br></br>
+                  </h2><br></br><br></br><br></br>
 
                   <div className="extra content">
                     <a>
@@ -166,11 +166,11 @@ const DisplayCard = ({ data, repositories }) => {
                         </div>
                       ))}
                     </a>
-                  </div><br></br><br></br>
+                  </div><br></br><br></br><br></br><br></br>
 
                   <h2 className="rit-titl">
                     <i className="fas fa-graduation-cap"></i>Important Links
-                  </h2>
+                  </h2><br></br><br></br>
                   <div className="education">
                     <ul className="row no-margin">
                       <li className="col-md-6">
