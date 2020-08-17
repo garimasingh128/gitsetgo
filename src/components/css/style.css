@@ -25,7 +25,7 @@ img {
 a {
   text-decoration: none;
   outline: none;
-  color: #444; }
+  color: #706d6e; }
 
 a:hover {
   color: #444; }
@@ -381,5 +381,19 @@ body {
       padding: 0px; }
   .rit-cover .profess-cover .progress-bar {
     background-color: #00ab9f; }
+table, tr, td, th {
+  border: 3px solid rgb(192, 190, 190);
+}
+table {
+  border-collapse: collapse;
+  width: 70%;
+  color: #706d6e;
+}
+th {
+  height: 20px;
+  text-align: center;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
