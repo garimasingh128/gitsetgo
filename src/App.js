@@ -1,8 +1,8 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 //import logo from './logo.svg';
 import "./App.css";
-import ReactDOM from "react-dom";
-import Pdf from "react-to-pdf";
+//import ReactDOM from "react-dom";
+//import Pdf from "react-to-pdf";
 
 // download html2canvas and jsPDF and save the files in app/ext, or somewhere else
 // the built versions are directly consumable
@@ -13,16 +13,12 @@ import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-
-const ref = React.createRef();
-
-
+//const ref = React.createRef();
 export default class App extends Component {
-  constructor(props) {
+  /*constructor(props) {
     super(props);
-  }
-
-   printDocument() {
+  }*/
+  printDocument() {
     const input = document.getElementById("divToPrint");
     html2canvas(input)
       .then((canvas) => {
@@ -34,7 +30,6 @@ export default class App extends Component {
       })
     ;
   }
-
   
   render() {
     return (<div className="App">

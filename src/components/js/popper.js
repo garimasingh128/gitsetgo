@@ -23,9 +23,12 @@
  * SOFTWARE.
  */
 (function (global, factory) {
-	typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() :
+	if (typeof exports === "object" && typeof module !== "undefined") {
+    module.exports = factory();
+  } else {
   //	typeof define === 'function' && define.amd ? define(factory) :
 	(global.Popper = factory());
+  }
 }(this, (function () { 
 
   var isBrowser = typeof window !== "undefined" && typeof document !== "undefined";
@@ -103,7 +106,7 @@ function getStyleComputedProperty(element, property) {
   }
   // NOTE: 1 DOM access here
   var css = getComputedStyle(element, null);
-  return property ? css[property] : css;
+  return property ? css.getPropertyValue(property) : css;
 }
 
 /**
@@ -262,7 +265,7 @@ function findCommonOffsetParent(element1, element2) {
  * @returns {number} amount of scrolled pixels
  */
 function getScroll(element) {
-  var side = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "top";
+  var side = arguments.length > 1 && typeof arguments[1] !== undefined ? arguments[1] : "top";
 
   var upperSide = side === "top" ? "scrollTop" : "scrollLeft";
   var nodeName = element.nodeName;
@@ -286,7 +289,7 @@ function getScroll(element) {
  * @return {Object} rect - The modifier rect object
  */
 function includeScroll(rect, element) {
-  var subtract = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  var subtract = arguments.length > 2 && typeof arguments[2] !== undefined ? arguments[2] : false;
 
   var scrollTop = getScroll(element, "top");
   var scrollLeft = getScroll(element, "left");
@@ -321,10 +324,10 @@ function getBordersSize(styles, axis) {
  * @memberof Popper.Utils
  * @returns {Boolean} isIE10
  */
-var isIE10 = undefined;
+var isIE10 = void 0;
 
 var isIE10$1 = function () {
-  if (isIE10 === undefined) {
+  if (typeof isIE10 === undefined) {
     isIE10 = navigator.appVersion.indexOf("MSIE 10") !== -1;
   }
   return isIE10;
@@ -362,7 +365,7 @@ var createClass = (function () {
       }
       Object.defineProperty(target, descriptor.key, descriptor);
     }
-  };
+  }
 
   return function (Constructor, protoProps, staticProps) {
     if (protoProps) {
@@ -372,13 +375,13 @@ var createClass = (function () {
       defineProperties(Constructor, staticProps);
     }
     return Constructor;
-  };
-})();
+  }
+}());
 
 var defineProperty = function (obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
-      value: value,
+      value,
       enumerable: true,
       configurable: true,
       writable: true
@@ -391,15 +394,15 @@ var defineProperty = function (obj, key, value) {
 };
 
 var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
+  arguments.forEach(function(arg) {
+    var source = arg;
 
     for (var key in source) {
       if (Object.prototype.hasOwnProperty.call(source, key)) {
         target[key] = source[key];
       }
     }
-  }
+  });
 
   return target;
 };
@@ -533,8 +536,8 @@ function getViewportOffsetRectRelativeToArtbitraryNode(element) {
   var offset = {
     top: scrollTop - relativeOffset.top + relativeOffset.marginTop,
     left: scrollLeft - relativeOffset.left + relativeOffset.marginLeft,
-    width: width,
-    height: height
+    width,
+    height
   };
 
   return getClientRect(offset);
@@ -635,7 +638,7 @@ function getArea(_ref) {
  * @returns {Object} The data object, properly modified
  */
 function computeAutoPlacement(placement, refRect, popper, reference, boundariesElement) {
-  var padding = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
+  var padding = arguments.length > 5 && typeof arguments[5] !== undefined ? arguments[5] : 0;
 
   if (placement.indexOf("auto") === -1) {
     return placement;
@@ -664,7 +667,7 @@ function computeAutoPlacement(placement, refRect, popper, reference, boundariesE
 
   var sortedAreas = Object.keys(rects).map(function (key) {
     return _extends({
-      key: key
+      key
     }, rects[key], {
       area: getArea(rects[key])
     });
@@ -824,12 +827,12 @@ function findIndex(arr, prop, value) {
  * @returns {dataObject}
  */
 function runModifiers(modifiers, data, ends) {
-  var modifiersToRun = ends === undefined ? modifiers : modifiers.slice(0, findIndex(modifiers, "name", ends));
+  var modifiersToRun = typeof ends === undefined ? modifiers : modifiers.slice(0, findIndex(modifiers, "name", ends));
 
   modifiersToRun.forEach(function (modifier) {
     if (modifier["function"]) {
       // eslint-disable-line dot-notation
-      console.warn("`modifier.function` is deprecated, use `modifier.fn`!");
+      // console.warn("`modifier.function` is deprecated, use `modifier.fn`!");
     }
     var fn = modifier["function"] || modifier.fn; // eslint-disable-line dot-notation
     if (modifier.enabled && isFunction(fn)) {
@@ -1170,10 +1173,10 @@ function computeStyle(data, options) {
   var legacyGpuAccelerationOption = find(data.instance.modifiers, function (modifier) {
     return modifier.name === "applyStyle";
   }).gpuAcceleration;
-  if (legacyGpuAccelerationOption !== undefined) {
-    console.warn("WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!");
+  if (typeof legacyGpuAccelerationOption !== undefined) {
+    // console.warn("WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!");
   }
-  var gpuAcceleration = legacyGpuAccelerationOption !== undefined ? legacyGpuAccelerationOption : options.gpuAcceleration;
+  var gpuAcceleration = typeof legacyGpuAccelerationOption !== undefined ? legacyGpuAccelerationOption : options.gpuAcceleration;
 
   var offsetParent = getOffsetParent(data.instance.popper);
   var offsetParentRect = getBoundingClientRect(offsetParent);
@@ -1270,7 +1273,7 @@ function isModifierRequired(modifiers, requestingName, requestedName) {
   if (!isRequired) {
     var _requesting = "`" + requestingName + "`";
     var requested = "`" + requestedName + "`";
-    console.warn(requested + " modifier is required by " + _requesting + " modifier in order to work, be sure to include it before " + _requesting + "!");
+    // console.warn(requested + " modifier is required by " + _requesting + " modifier in order to work, be sure to include it before " + _requesting + "!");
   }
   return isRequired;
 }
@@ -1304,7 +1307,7 @@ function arrow(data, options) {
     // if the arrowElement isn't a query selector we must check that the
     // provided DOM node is child of its popper node
     if (!data.instance.popper.contains(arrowElement)) {
-      console.warn("WARNING: `arrow.element` must be child of its popper element!");
+      // console.warn("WARNING: `arrow.element` must be child of its popper element!");
       return data;
     }
   }
