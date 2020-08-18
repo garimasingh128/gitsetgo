@@ -36,6 +36,7 @@ const DisplayCard = ({ data, repositories }) => {
             filename="resume_github.pdf"
             options={options}
             scale={0.7}
+            style={{height:500}}
           >
             {({ toPdf }) => (
               <button
@@ -49,17 +50,17 @@ const DisplayCard = ({ data, repositories }) => {
               </button>
             )}
           </ReactToPdf>
-          <div className="container profile-box" ref={ref}>
+          <div className="container profile-box" ref={ref} style = { {marginTop: 40}}>
             <div className="row">
-              <div className="col-md-4 left-co">
-                <div className="left-side">
-                  <div className="profile-info">
+              <div className="col-md-4 left-co" >
+                <div className="left-side" style = {{marginTop:160}}>
+                  <div className="profile-info" >
                     <img
                       src={data.avatar_url}
                       alt={data.avatar_url}
-                      style={{ marginTop: 30 }}
+                      style={{ marginTop: 60 }}
                     ></img>{" "}
-                    <h3>{data.name}</h3>
+                    <h3 >{data.name}</h3>
                   </div>
                   <h4 className="ltitle">Contact</h4>
 
@@ -119,7 +120,7 @@ const DisplayCard = ({ data, repositories }) => {
                   <div className="hotkey">
                     <h1 className="">{data.name}</h1>
                     <small>{data.login}</small>
-                  </div><br></br><br></br>
+                  </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>About
                   </h2>
@@ -129,15 +130,15 @@ const DisplayCard = ({ data, repositories }) => {
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>Public Repositories:{" "}
                     {data.public_repos}{" "}
-                  </h2><br></br><br></br>
+                  </h2>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>Public Gists:{" "}
                     {data.public_gists}{" "}
-                  </h2><br></br><br></br>
+                  </h2>
 
                   <h2 className="rit-titl">
                     <i className="fas fa-briefcase"></i>Repositories
-                  </h2><br></br><br></br><br></br>
+                  </h2>
 
                   <div className="extra content">
                     <a>
@@ -166,11 +167,11 @@ const DisplayCard = ({ data, repositories }) => {
                         </div>
                       ))}
                     </a>
-                  </div><br></br><br></br><br></br><br></br>
+                  </div>
 
                   <h2 className="rit-titl">
                     <i className="fas fa-graduation-cap"></i>Important Links
-                  </h2><br></br><br></br>
+                  </h2>
                   <div className="education">
                     <ul className="row no-margin">
                       <li className="col-md-6">
