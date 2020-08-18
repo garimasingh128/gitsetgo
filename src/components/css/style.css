@@ -99,9 +99,9 @@ p {
 }
 
 ::placeholder {
-  color: #747f8a !important;
+  color: #747f8a;
   font-size: 13px;
-  opacity: 0.5 !important;
+  opacity: 0.5;
 }
 
 .container-fluid {
@@ -122,7 +122,7 @@ strong {
 }
 
 body {
-  background-color: #f7f7ff !important;
+  background-color: #f7f7ff;
   font-family: "mouse-300", Arial, Helvetica, sans-serif;
   color: #6a6a6a;
 }
@@ -213,19 +213,19 @@ body {
 }
 
 .btn-success:hover {
-  background-color: #00ab9f !important;
-  border-color: #00ab9f !important;
+  background-color: #00ab9f;
+  border-color: #00ab9f;
 }
 
 .btn-success:active {
-  background-color: #00ab9f !important;
-  border-color: #00ab9f !important;
+  background-color: #00ab9f;
+  border-color: #00ab9f;
 }
 
 .btn-success:focus {
-  background-color: #00ab9f !important;
-  border-color: #00ab9f !important;
-  box-shadow: none !important;
+  background-color: #00ab9f;
+  border-color: #00ab9f;
+  box-shadow: none;
 }
 
 .btn-info {
@@ -234,19 +234,19 @@ body {
 }
 
 .btn-info:hover {
-  background-color: #4f6dcd !important;
-  border-color: #4f6dcd !important;
+  background-color: #4f6dcd;
+  border-color: #4f6dcd;
 }
 
 .btn-info:active {
-  background-color: #4f6dcd !important;
-  border-color: #4f6dcd !important;
+  background-color: #4f6dcd;
+  border-color: #4f6dcd;
 }
 
 .btn-info:focus {
-  background-color: #4f6dcd !important;
-  border-color: #4f6dcd !important;
-  box-shadow: none !important;
+  background-color: #4f6dcd;
+  border-color: #4f6dcd;
+  box-shadow: none;
 }
 
 .btn {
@@ -278,10 +278,7 @@ body {
 
 .form-control:focus {
   box-shadow: none;
-  border: 2px solid #0d7a40 !important;
-}
-
-.form-control:focus {
+  border: 2px solid #0d7a40;
   background-color: #fff;
   border-color: #ccc;
 }
@@ -333,7 +330,7 @@ body {
   box-shadow:
     0 2px 5px 0 rgba(0, 0, 0, 0.16),
     0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  background-color: #FFF;
+  background-color: #fff;
   width: auto;
   max-width: 200px;
   margin: auto;
@@ -508,12 +505,12 @@ body {
 }
 
 .rit-cover .work-exp {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 
 .rit-cover .work-exp h6 {
   font-size: 0.9rem;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .rit-cover .work-exp h6 span {
@@ -526,7 +523,7 @@ body {
 }
 
 .rit-cover .work-exp ul {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 
 .rit-cover .work-exp ul li {
@@ -539,7 +536,7 @@ body {
 }
 
 .rit-cover .education {
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
 .rit-cover .education ul li {
@@ -558,7 +555,7 @@ body {
 }
 
 .rit-cover .profess-cover {
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
 .rit-cover .profess-cover .prog-row {
