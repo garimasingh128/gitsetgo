@@ -91,9 +91,9 @@ Getting your Github profile under a single page in a resume type-of format so th
 We were inspired to create it when we saw that not many tools are available open-source or on the Internet which do the job we intend to do. So we decided to create it as a side-project based purely to learn and have some fun juggling with Github APIs'.
 
 ## 🤷 Project Structure 
-<div align="center>
+<p>
   <img src="./demo/file_icon.jpg" width="300" height="300">
-</div>
+</p>
     .
     ├── ...
     ├── .github
@@ -116,10 +116,10 @@ The project is created using create-react-app and based on React.js framework.
 
 ## 🚀 Steps to setup development environment
 <p></p>
-<div align="center">
 <img src="https://media.giphy.com/media/24akSucLOFwwoZamdr/giphy.gif">
-</div>
-1.  Clone the repo
+<p></p>
+
+ 1.  Clone the repo
  ```bash
  git clone github.com/your_username/gitsetgo.git
  ```
