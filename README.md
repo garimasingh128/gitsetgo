@@ -90,9 +90,7 @@ Getting your Github profile under a single page in a resume type-of format so th
 ## ❤️ Inspiration
 We were inspired to create it when we saw that not many tools are available open-source or on the Internet which do the job we intend to do. So we decided to create it as a side-project based purely to learn and have some fun juggling with Github APIs'.
 
-## 🤷 Project Structure 
-<img src="./demo/file_icon.jpg">
-<p></p>
+## 🤷 Project Structure <img src="./demo/file_icon.jpg">
     .
     ├── ...
     ├── .github
