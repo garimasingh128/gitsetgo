@@ -103,11 +103,11 @@ We were inspired to create it when we saw that not many tools are available open
     
 ## 🔆 Tech Stack
 The project is created using create-react-app and based on React.js framework.
-<img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="200px" height="200px">
 -  JavaScript + React: 84.5% 
 -  HTML: 10.3%
 -  CSS: 5.2%
-<img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="200px" height="200px">
+<img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="300px" height="300px">
+<img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="300px" height="300px">
 ## 👬 Design and Roadmap
 The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id=0%3A1) we intended to follow is present here. Feel free to suggest ideas and opinions.
 
