@@ -84,16 +84,17 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
 
 ## 👩‍ Vision
 Getting your Github profile under a single page in a resume type-of format so that you can simply put your Github resume when applying to internships or job profiles.
-
+<div align="center">
   <img src="https://media.giphy.com/media/2higF6P3xOhMY/giphy.gif" width="200px" height="200px">
+</div>
 
 ## ❤️ Inspiration
 We were inspired to create it when we saw that not many tools are available open-source or on the Internet which do the job we intend to do. So we decided to create it as a side-project based purely to learn and have some fun juggling with Github APIs'.
 
 ## 🤷 Project Structure 
-<p>
-  <img src="./demo/file_icon.jpg" width="300" height="300">
-</p>
+  <img src="./demo/file_icon.jpg" width="100" height="100">
+  <p></p>
+  
     .
     ├── ...
     ├── .github
