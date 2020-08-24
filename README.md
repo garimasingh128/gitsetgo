@@ -92,6 +92,7 @@ We were inspired to create it when we saw that not many tools are available open
 
 ## 🤷 Project Structure 
 <img src="./demo/file_icon.jpg">
+<p></p>
     .
     ├── ...
     ├── .github
@@ -115,6 +116,7 @@ The project is created using create-react-app and based on React.js framework.
 ## 🚀 Steps to setup development environment
 <p></p>
 <img src="https://media.giphy.com/media/24akSucLOFwwoZamdr/giphy.gif">
+<p></p>
 1.  Clone the repo
  ```bash
  git clone github.com/your_username/gitsetgo.git
