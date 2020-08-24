@@ -15,16 +15,25 @@
 ![Release Date](https://img.shields.io/github/release-date/mrinal41298/gitsetgo)
 ![Issues](https://img.shields.io/github/issues/mrinal41298/gitsetgo)
 ![Stars GitHub](https://img.shields.io/github/stars/mrinal41298/gitsetgo)
+![Forks](https://img.shields.io/github/forks/garimasingh128/gitsetgo)
 ![Language](https://img.shields.io/github/languages/top/mrinal41298/gitsetgo)
 ![Size](https://img.shields.io/github/repo-size/mrinal41298/gitsetgo)
+![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fgarimasingh128%2Fgitsetgo)
+
+
 
 ## 👩‍ Demo PDF generated
-
 <div align="center">
-
-<img src="./demo/ss.png" width="600">
+  <img src="./demo/ss.png" width="300" height="300">
 </div>
 
+## Demo Splash Screens Black / Light
+<div align="center">
+  <img src="https://xd.adobe.com/view/b439474d-4fbe-415f-b766-d6d77cbdef98-e16a">
+</div>
+<div align="center">
+  <img src="https://xd.adobe.com/view/b439474d-4fbe-415f-b766-d6d77cbdef98-e16a" width="300" height="300">
+</div>
 A Github Resume generator 👨‍💻👩‍ to create your own personalised resume based on your Github profile. 🔎 This tool lets you have your resume on a single click.
 
 
@@ -57,7 +66,7 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
  ➡️   [Vision](#-vision)
 
  ➡️   [Project Structure](#-project-structure)
- 
+
  ➡️   [Tech Stack](#-tech-stack)
  
  ➡️   [Setup Development Environment](#-steps-to-setup-development-environment)
@@ -66,8 +75,8 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
  
  ➡️   [Learning Resources](#-learning-resources)
  
-➡️   [Future Plans](#-future-plans)
-
+ ➡️   [Future Plans](#-future-plans)
+      
  ➡️   [System Requirements](#-system-requirements)
  
  ➡️   [Contributing](#-contributing)
@@ -82,6 +91,8 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
 
 ## 👩‍ Vision
 Getting your Github profile under a single page in a resume type-of format so that you can simply put your Github resume when applying to internships or job profiles.
+
+  <img src="https://media.giphy.com/media/2higF6P3xOhMY/giphy.gif" width="40px" height="40px">
 
 ## ❤️ Inspiration
 We were inspired to create it when we saw that not many tools are available open-source or on the Internet which do the job we intend to do. So we decided to create it as a side-project based purely to learn and have some fun juggling with Github APIs'.
@@ -99,10 +110,11 @@ We were inspired to create it when we saw that not many tools are available open
     
 ## 🔆 Tech Stack
 The project is created using create-react-app and based on React.js framework.
--  JavaScript: 84.5%
+  <img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="20px" height="20px">
+-  JavaScript + React: 84.5% 
 -  HTML: 10.3%
 -  CSS: 5.2%
-
+  <img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="20px" height="20px">
 ## 👬 Design and Roadmap
 The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id=0%3A1) we intended to follow is present here. Feel free to suggest ideas and opinions.
 
