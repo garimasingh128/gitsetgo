@@ -27,13 +27,6 @@
   <img src="./demo/ss.png" width="300" height="300">
 </div>
 
-## Demo Splash Screens Black / Light
-<div align="center">
-  <img src="https://xd.adobe.com/view/b439474d-4fbe-415f-b766-d6d77cbdef98-e16a">
-</div>
-<div align="center">
-  <img src="https://xd.adobe.com/view/b439474d-4fbe-415f-b766-d6d77cbdef98-e16a" width="300" height="300">
-</div>
 A Github Resume generator 👨‍💻👩‍ to create your own personalised resume based on your Github profile. 🔎 This tool lets you have your resume on a single click.
 
 
@@ -92,7 +85,7 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
 ## 👩‍ Vision
 Getting your Github profile under a single page in a resume type-of format so that you can simply put your Github resume when applying to internships or job profiles.
 
-  <img src="https://media.giphy.com/media/2higF6P3xOhMY/giphy.gif" width="40px" height="40px">
+  <img src="https://media.giphy.com/media/2higF6P3xOhMY/giphy.gif" width="200px" height="200px">
 
 ## ❤️ Inspiration
 We were inspired to create it when we saw that not many tools are available open-source or on the Internet which do the job we intend to do. So we decided to create it as a side-project based purely to learn and have some fun juggling with Github APIs'.
@@ -110,11 +103,11 @@ We were inspired to create it when we saw that not many tools are available open
     
 ## 🔆 Tech Stack
 The project is created using create-react-app and based on React.js framework.
-  <img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="20px" height="20px">
+<img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="200px" height="200px">
 -  JavaScript + React: 84.5% 
 -  HTML: 10.3%
 -  CSS: 5.2%
-  <img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="20px" height="20px">
+<img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="200px" height="200px">
 ## 👬 Design and Roadmap
 The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id=0%3A1) we intended to follow is present here. Feel free to suggest ideas and opinions.
 
