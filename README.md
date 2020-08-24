@@ -90,7 +90,10 @@ Getting your Github profile under a single page in a resume type-of format so th
 ## ❤️ Inspiration
 We were inspired to create it when we saw that not many tools are available open-source or on the Internet which do the job we intend to do. So we decided to create it as a side-project based purely to learn and have some fun juggling with Github APIs'.
 
-## 🤷 Project Structure <img src="./demo/file_icon.jpg">
+## 🤷 Project Structure 
+<div align="center>
+  <img src="./demo/file_icon.jpg" width="300" height="300">
+</div>
     .
     ├── ...
     ├── .github
@@ -107,14 +110,15 @@ The project is created using create-react-app and based on React.js framework.
 -  HTML: 10.3%
 -  CSS: 5.2%
    <p></p>
-<img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="300px" height="300px"><img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="300px" height="300px">
+  <img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="300px" height="300px"><img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="300px" height="300px">
 ## 👬 Design and Roadmap
 - The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id=0%3A1) we intended to follow is present here. Feel free to suggest ideas and opinions.
 
 ## 🚀 Steps to setup development environment
 <p></p>
+<div align="center">
 <img src="https://media.giphy.com/media/24akSucLOFwwoZamdr/giphy.gif">
-<p></p>
+</div>
 1.  Clone the repo
  ```bash
  git clone github.com/your_username/gitsetgo.git
