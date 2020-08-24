@@ -106,6 +106,7 @@ The project is created using create-react-app and based on React.js framework.
 -  JavaScript + React: 84.5% 
 -  HTML: 10.3%
 -  CSS: 5.2%
+   <p></p>
 <img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="300px" height="300px"><img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="300px" height="300px">
 ## 👬 Design and Roadmap
 - The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id=0%3A1) we intended to follow is present here. Feel free to suggest ideas and opinions.
