@@ -8,8 +8,6 @@ import * as JsPDF from "jspdf";
 
 import Profile from "../components/Profile";
 
-
-
 export default class Export extends Component {
   constructor(props) {
     super(props);
@@ -24,18 +22,17 @@ export default class Export extends Component {
         pdf.addImage(imgData, "JPEG", 0, 0);
         // pdf.output("dataurlnewwindow");
         pdf.save("download.pdf");
-      })
-    ;
+      });
   }
 
   render() {
-    return (<div>
-      <div className="mb5">
-        <button onClick={this.printDocument}>Print</button>
+    return (
+      <div>
+        <div className="mb5">
+          <button onClick={this.printDocument}>Print</button>
+        </div>
+        <div id="divToPrint" className="mt4"></div>
       </div>
-      <div id="divToPrint" className="mt4" >
-       
-      </div>
-    </div>);
+    );
   }
 }
