@@ -3,13 +3,14 @@ import DisplayCard from "./DisplayCard";
 import Loader from "./images/Loader.svg";
 
 const Profile = () => {
-  const [data, setData] = useState({});
-  const [username, setUsername] = useState("");
-  const [repositories, setRepositories] = useState([]);
+  const [data, setData] = useState(sessionStorage.getItem("data") ? JSON.parse(sessionStorage.getItem("data")) : {});
+  const [username, setUsername] = useState(sessionStorage.getItem("username") ? sessionStorage.getItem("username") : "");
+  const [repositories, setRepositories] = useState(sessionStorage.getItem("repo") ? JSON.parse(sessionStorage.getItem("repo")) : []);
   const [isLoading, setLoading] = useState(false);
 
   const onChangeHandler = (e) => {
     setUsername(e.target.value);
+    sessionStorage.setItem("username", e.target.value);
   };
 
   const submitHandler = async (e) => {
@@ -18,20 +19,20 @@ const Profile = () => {
       setLoading(true);
       const profile = await fetch(`https://api.github.com/users/${username}`);
       const profileJson = await profile.json();
-      // console.log(profileJson);
-
       const repositories = await fetch(profileJson.repos_url);
       const repoJson = await repositories.json();
-      // console.log(repoJson);
       if (profileJson) {
         setData(profileJson);
+        sessionStorage.setItem("data", JSON.stringify(profileJson));
         setRepositories(repoJson);
+        sessionStorage.setItem("repo", JSON.stringify(repoJson));
       }
     } catch (err) {
       console.log(err.message);
     }
     setLoading(false);
   };
+
   return (
     <>
       <div style={{ padding: 20 }}>
