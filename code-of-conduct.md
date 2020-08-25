@@ -30,7 +30,6 @@ You are expected to be thoughtful and considerate towards others. In this way we
 We want to create a welcoming and friendly corporate culture for everyone. Discrimination and harassment are expressly prohibited. In addition, any behaviour or language that is exclusive or harassing is strongly rejected. Especially in the tech scene there exist behavior we don't like to see and that we would like to change:
 
 ### - Don't be surprised if a team member is not yet familiar with a topic
-
 We believe in the spirit of a beginner and in the fact that one constantly wants to learn something new. It is absolutely okay to say "I don't know" or "I don't understand". The phrase "there are no stupid questions" is lived 100% by us, because that is the only way we learn. So please don't be surprised if someone is not familiar with a tool, a person or a process.
 
 ### - No exclusive language
