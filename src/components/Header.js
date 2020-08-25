@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "./daftpunktocat.gif";
+import logo from "./images/daftpunktocat.gif";
 const Header = () => {
   return (
     <NavbarC>
