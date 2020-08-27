@@ -22,7 +22,6 @@ const Profile = () => {
     const repositories = await fetch(profileJson.repos_url);
     const repoJson = await repositories.json();
     console.log(repoJson);
-
     if (profileJson) {
       setData(profileJson);
       setRepositories(repoJson);

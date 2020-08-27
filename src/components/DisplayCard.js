@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./css/animate.css";
 import "./css/bootstrap.min.css";
 import "./css/bootstrap.min.css.map";
@@ -28,10 +28,14 @@ const options = {
 
 
 const DisplayCard = ({ data, repositories }) => {
+  const [showCheckBox, setShowCheckBox] = useState("");
+  const [isClicked, setIsClicked] = useState("");
+
   const repos = [];
+//  let box = "";
   {repositories.map((repo, i) => (
     repos.push(
-      <tr key={repo.name} >
+      <tr key={repo.id} data-key={i}>
         <td>{i}</td>
         <td>{repo.language}</td>
         <td> 
@@ -39,9 +43,32 @@ const DisplayCard = ({ data, repositories }) => {
               target="_blank">
             {repo.name}
           </a></td>
+        {showCheckBox}
       </tr>
     )
   ))}
+
+  const checkBoxHandler = (e)=> {
+    let a = e.currentTarget.parentNode.parentNode.getAttribute("data-key");
+    console.log(a);
+    repos.slice()
+  }
+
+  const selectRepoHandler = ()=> {
+    setShowCheckBox(()=>{
+      return(<td>
+          <input type='checkbox' value={isClicked} onClick={(e)=>{
+            setIsClicked(e.target.value)
+            checkBoxHandler(e)
+            }}/>
+        </td>);
+    });
+    
+    console.log("Its click!");
+    console.log(setShowCheckBox);
+    console.log(showCheckBox);
+//    forceUpdate();
+  }
 
   return (
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
@@ -65,6 +92,14 @@ const DisplayCard = ({ data, repositories }) => {
               </button>
             )}
           </ReactToPdf>
+
+          <button 
+            className="ui violet button"
+            type="submit"
+            onClick={selectRepoHandler}>
+              Delete Repository
+          </button>
+
           <div className="container profile-box" ref={ref}>
             <div className="row">
               <div className="col-md-4 left-co">
