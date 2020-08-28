@@ -26,7 +26,7 @@ const options = {
   unit: "cm",
 };
 
-const DisplayCard = ({ data, repositories }) => {
+const DisplayCard = ({ data, repositories, langs }) => {
   return (
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
       {data.name ? (
@@ -61,8 +61,13 @@ const DisplayCard = ({ data, repositories }) => {
                     ></img>{" "}
                     <h3>{data.name}</h3>
                   </div>
+                  <h4 className="ltitle">Top Languages</h4>
+                  <div>{langs.filter((lang) => lang.label !== "Others").slice(0, 3).map((lang) => (
+                    <div key={lang.label}>
+                      <img src={"https://img.shields.io/badge/-" + lang.label + "-" + lang.color.replace('#', '')} alt={`${lang.label}`}/>
+                    </div>
+                  ))}</div>
                   <h4 className="ltitle">Contact</h4>
-
                   {data.email ? (
                     <div className="contact-box pb0">
                       <div className="icon">
