@@ -1,6 +1,6 @@
 
 # 👣 Git Set Go
-### 😃😃 A Github profile resume generator. ✨
+### A Github profile resume generator. ✨
 
 ![Demo](./demo/demo.gif)
 
@@ -108,7 +108,7 @@ The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id
 
 ## 🚀 Steps to setup development environment
 1.  Fork the repo to your account.
-  ![gitsetgo-fork button](https://user-images.githubusercontent.com/51092036/90437080-5bca1f80-e0ef-11ea-93a7-0ed0daaa8f61.png)
+  ![Fork the gitsetgo repository](https://user-images.githubusercontent.com/51092036/91578681-25e72f80-e968-11ea-8f66-f679ed01cdfd.png)
 
 2. Go to Git Bash and Clone the forked repo i.e. the gitsetgo repo that has been added to your account using:
 
@@ -116,7 +116,7 @@ The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id
  git clone github.com/your_username/gitsetgo.git
  ```
 
-![gitsetgo-clone button](https://user-images.githubusercontent.com/51092036/90438270-5241b700-e0f1-11ea-9008-7b12ae3c75ed.png)
+![Clone the gitsetgo repository](https://user-images.githubusercontent.com/51092036/91579201-e40ab900-e968-11ea-9453-53ad6813ae2c.png)
 
 3. Go to the gitsetgo folder on your PC through Git Bash and create a new branch:
 
