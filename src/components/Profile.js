@@ -9,6 +9,7 @@ const Profile = () => {
   const [repositories, setRepositories] = useState(sessionStorage.getItem("repo") ? JSON.parse(sessionStorage.getItem("repo")) : []);
   const [isLoading, setLoading] = useState(false);
   const [langs, setLangs] = useState(sessionStorage.getItem("langs") ? JSON.parse(sessionStorage.getItem("langs")) : []);
+  const [orgs, setOrgs] = useState(sessionStorage.getItem("orgs") ? JSON.parse(sessionStorage.getItem("orgs")) : []);
 
   const onChangeHandler = (e) => {
     setUsername(e.target.value);
@@ -24,11 +25,15 @@ const Profile = () => {
       const me = new GhPolyglot(profileJson.login);
       const repositories = await fetch(profileJson.repos_url);
       const repoJson = await repositories.json();
+      const orgs = await fetch(profileJson.organizations_url)
+      const orgsJson = await orgs.json();
       if (profileJson) {
         setData(profileJson);
         sessionStorage.setItem("data", JSON.stringify(profileJson));
         setRepositories(repoJson);
         sessionStorage.setItem("repo", JSON.stringify(repoJson));
+        setOrgs(orgsJson);
+        sessionStorage.setItem("orgs", JSON.stringify(orgsJson));
         me.userStats((err, stats) => {
           setLangs(err || stats);
           sessionStorage.setItem("langs", JSON.stringify(stats));
@@ -72,7 +77,7 @@ const Profile = () => {
               </button>
 
               <center>
-                <DisplayCard data={data} repositories={repositories} langs={langs}/>
+                <DisplayCard data={data} repositories={repositories} langs={langs} orgs={orgs}/>
               </center>
             </>
           )}

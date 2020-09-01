@@ -26,7 +26,7 @@ const options = {
   unit: "cm",
 };
 
-const DisplayCard = ({ data, repositories, langs }) => {
+const DisplayCard = ({ data, repositories, langs, orgs }) => {
   return (
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
       {data.name ? (
@@ -92,9 +92,19 @@ const DisplayCard = ({ data, repositories, langs }) => {
                   </ul>
                   <h4 className="ltitle">Organisations</h4>
 
-                  <div className="refer-cov">
-                    <b>{data.company}</b>
-                  </div>
+                  <div>{orgs.map((organization) => (
+                      <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={"https://github.com/" + organization.login}
+                      >
+                        <img
+                          src={organization.avatar_url}
+                          alt={organization.avatar_url}
+                          style={{ marginTop: 15, width: 50, marginLeft: 10 }}
+                        ></img>
+                      </a>
+                  ))}</div>
 
                   <h4 className="ltitle">
                     Followers: <i className="fas fa-pencil-alt"></i>
