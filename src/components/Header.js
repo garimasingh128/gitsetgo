@@ -3,6 +3,7 @@ import styled from "styled-components";
 import logo from "./images/daftpunktocat.gif";
 const Header = () => {
   return (
+    
     <NavbarC>
       {" "}
       <nav class="navbar navbar-dark bg-dark">
@@ -14,7 +15,9 @@ const Header = () => {
           alt=""
         />
       </nav>
-     {" "}
+     {""}
+     <spacer/> <spacer/>
+     <center>
       <nav class="navbar navbar-light " style={{ background: "#343a40" }}>
         <a
           href="./"
@@ -24,7 +27,7 @@ const Header = () => {
         </a>{" "}
       </nav>{" "}
       <spacer /> <spacer /> <spacer /> <spacer /> <spacer />{" "}
-      <center>
+      
         <nav class="navbar navbar-dark bg-dark">
           {" "}
           <p style={{ fontSize: 15 }}>
@@ -42,10 +45,11 @@ const NavbarC = styled.div`
   font-size: 25px;
   font-family: cursive;
   display: flex;
-  align-items: center;
+  justify-content:center:
+  flex-direction:coloumn;
   height: 100%;
   padding: 0 1rem;
   spacer {
-    flex: 0.01;
+    flex: 0.03;
   }
 `;
