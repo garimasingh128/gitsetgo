@@ -53,6 +53,15 @@
    
    
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script> 
+        $(document).ready(function() { 
+            // Change background image of a div by clicking on the button 
+            $("themeBox").click(function() { 
+                var imageUrl =  "./components/images/bg.jpeg"; 
+                $("body").css("background-image", "url(" + imageUrl + ")"); 
+            }); 
+        }); 
+    </script> 
 </body>
 
 </html>
