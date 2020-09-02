@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "./images/daftpunktocat.gif";
+import '../App.css';
+
 const Header = () => {
   return (
     <NavbarC>
@@ -32,6 +34,10 @@ const Header = () => {
           </p>
         </nav>
       </center>{" "}
+        <nav class="navbar navbar-dark bg-dark">
+          {" "}
+          <input id ="themeBox" type="checkbox"></input>
+        </nav>
     </NavbarC>
   );
 };
