@@ -110,7 +110,7 @@ The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id
 1.  Fork the repo
     You can easily fork the repo by clicking the Fork button that can be found on the top right corner of the landing page of the repository.
     Images
-    ![Fork](https://drive.google.com/file/d/1_5wgqjWgI09nD5Rwh7Rxw3CBGXBrcgBu/view?usp=sharing)
+    ![Fork](preview.jpeg)
 2.  Clone the repo
  ```bash
  git clone github.com/your_username/gitsetgo.git
