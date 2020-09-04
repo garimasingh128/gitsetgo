@@ -107,18 +107,22 @@ The project is created using create-react-app and based on React.js framework.
 The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id=0%3A1) we intended to follow is present here. Feel free to suggest ideas and opinions.
 
 ## 🚀 Steps to setup development environment
-1.  Fork the repo
-    You can easily fork the repo by clicking the Fork button that can be found on the top right corner of the landing page of the repository.
-    Images
-    ![Fork](preview.jpeg)
+1. Fork the repo 
+   You can easily fork the repo by clicking the Fork button that can be found on the top right corner of the landing page of the repository.
+   
+   
 2.  Clone the repo
  ```bash
  git clone github.com/your_username/gitsetgo.git
  ```
  Where `your_username` is your GitHub handle.
- 2. Open the folder in your favorite code editor and start adding modifications.
+     OR 
+ 
+ 3. Open the folder in your favorite code editor and start adding modifications.
 
- ## 💻 Development guidelines
+
+
+## 💻 Development guidelines
 
 1.  Put all the code in one of the existing files in  `/src`.
     
