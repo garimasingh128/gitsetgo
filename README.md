@@ -109,7 +109,7 @@ The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id
 ## 🚀 Steps to setup development environment
 1. Fork the repo 
    You can easily fork the repo by clicking the Fork button that can be found on the top right corner of the landing page of the repository.
-   Images
+   
    ![preview](https://user-images.githubusercontent.com/64744084/92189242-d29b4280-ee7b-11ea-81d5-a1f06b22b769.jpg)
  
 2.  Clone the repo
@@ -117,8 +117,7 @@ The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id
  git clone github.com/your_username/gitsetgo.git
  ```
    Where `your_username` is your GitHub handle.
-         OR
-    Images    
+        OR    
     ![preview (1)](https://user-images.githubusercontent.com/64744084/92189261-dc24aa80-ee7b-11ea-8fa6-96508418c0f0.jpg)
 
  3. Open the folder in your favorite code editor and start adding modifications.
