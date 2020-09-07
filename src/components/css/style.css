@@ -554,22 +554,29 @@ body {
 }
 
 .rit-cover .profess-cover {
-  padding: 20px 0;
+  padding: 20px 0px; }
+  .rit-cover .profess-cover .prog-row {
+    width: 100%;
+    text-align: left;
+    padding: 8px 2px;
+    font-size: .9rem; }
+    .rit-cover .profess-cover .prog-row div {
+      padding: 0px; }
+  .rit-cover .profess-cover .progress-bar {
+    background-color: #00ab9f; }
+table, tr, td, th {
+  border: 3px solid rgb(192, 190, 190);
+}
+table {
+  border-collapse: collapse;
+  width: 70%;
+  color: #706d6e;
+}
+th {
+  height: 20px;
+  text-align: center;
 }
 
-.rit-cover .profess-cover .prog-row {
-  width: 100%;
-  text-align: left;
-  padding: 8px 2px;
-  font-size: 0.9rem;
-}
 
-.rit-cover .profess-cover .prog-row div {
-  padding: 0;
-}
-
-.rit-cover .profess-cover .progress-bar {
-  background-color: #00ab9f;
-}
 
 /*# sourceMappingURL=style.css.map */
