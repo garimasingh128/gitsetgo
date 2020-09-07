@@ -36,6 +36,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
             filename="resume_github.pdf"
             options={options}
             scale={0.7}
+            style={{height:500}}
           >
             {({ toPdf }) => (
               <button
@@ -49,17 +50,17 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
               </button>
             )}
           </ReactToPdf>
-          <div className="container profile-box" ref={ref}>
+          <div className="container profile-box" ref={ref} style = { {marginTop: 40}}>
             <div className="row">
-              <div className="col-md-4 left-co">
-                <div className="left-side">
-                  <div className="profile-info">
+              <div className="col-md-4 left-co" >
+                <div className="left-side" style = {{marginTop:160}}>
+                  <div className="profile-info" >
                     <img
                       src={data.avatar_url}
                       alt={data.avatar_url}
-                      style={{ marginTop: 30 }}
+                      style={{ marginTop: 60 }}
                     ></img>{" "}
-                    <h3>{data.name}</h3>
+                    <h3 >{data.name}</h3>
                   </div>
                   <h4 className="ltitle">Top Languages</h4>
                   <div>{langs.filter((lang) => lang.label !== "Others").slice(0, 3).map((lang) => (
@@ -134,13 +135,13 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                   <div className="hotkey">
                     <h1 className="">{data.name}</h1>
                     <small>{data.login}</small>
-                  </div>
+                  </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>About
                   </h2>
                   <div className="about">
                     <p>{data.bio}</p>
-                  </div>
+                  </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>Public Repositories:{" "}
                     {data.public_repos}{" "}
