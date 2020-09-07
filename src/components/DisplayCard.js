@@ -194,14 +194,14 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                           Blog:
                           <spacer />
                         </span>
-                        {data.blog}
+                        <a href={data.blog}>{data.blog}</a>
                       </li>
                       <li className="col-md-6">
                         <span>
                           Github Profile:
                           <spacer />
                         </span>
-                        {data.html_url}
+                        <a href={data.html_url}>{data.html_url}</a>
                       </li>
                     </ul>
                   </div>
