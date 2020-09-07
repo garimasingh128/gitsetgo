@@ -26,7 +26,7 @@ const options = {
   unit: "cm",
 };
 
-const DisplayCard = ({ data, repositories }) => {
+const DisplayCard = ({ data, repositories, langs, orgs }) => {
   return (
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
       {data.name ? (
@@ -36,6 +36,7 @@ const DisplayCard = ({ data, repositories }) => {
             filename="resume_github.pdf"
             options={options}
             scale={0.7}
+            style={{height:500}}
           >
             {({ toPdf }) => (
               <button
@@ -49,20 +50,25 @@ const DisplayCard = ({ data, repositories }) => {
               </button>
             )}
           </ReactToPdf>
-          <div className="container profile-box" ref={ref}>
+          <div className="container profile-box" ref={ref} style = { {marginTop: 40}}>
             <div className="row">
-              <div className="col-md-4 left-co">
-                <div className="left-side">
-                  <div className="profile-info">
+              <div className="col-md-4 left-co" >
+                <div className="left-side" style = {{marginTop:160}}>
+                  <div className="profile-info" >
                     <img
                       src={data.avatar_url}
                       alt={data.avatar_url}
-                      style={{ marginTop: 30 }}
+                      style={{ marginTop: 60 }}
                     ></img>{" "}
-                    <h3>{data.name}</h3>
+                    <h3 >{data.name}</h3>
                   </div>
+                  <h4 className="ltitle">Top Languages</h4>
+                  <div>{langs.filter((lang) => lang.label !== "Others").slice(0, 3).map((lang) => (
+                    <div key={lang.label}>
+                      <img src={"https://img.shields.io/badge/-" + lang.label + "-" + lang.color.replace('#', '')} alt={`${lang.label}`}/>
+                    </div>
+                  ))}</div>
                   <h4 className="ltitle">Contact</h4>
-
                   {data.email ? (
                     <div className="contact-box pb0">
                       <div className="icon">
@@ -87,9 +93,19 @@ const DisplayCard = ({ data, repositories }) => {
                   </ul>
                   <h4 className="ltitle">Organisations</h4>
 
-                  <div className="refer-cov">
-                    <b>{data.company}</b>
-                  </div>
+                  <div>{orgs.map((organization) => (
+                      <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={"https://github.com/" + organization.login}
+                      >
+                        <img
+                          src={organization.avatar_url}
+                          alt={organization.avatar_url}
+                          style={{ marginTop: 15, width: 50, marginLeft: 10 }}
+                        ></img>
+                      </a>
+                  ))}</div>
 
                   <h4 className="ltitle">
                     Followers: <i className="fas fa-pencil-alt"></i>
@@ -119,13 +135,13 @@ const DisplayCard = ({ data, repositories }) => {
                   <div className="hotkey">
                     <h1 className="">{data.name}</h1>
                     <small>{data.login}</small>
-                  </div>
+                  </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>About
                   </h2>
                   <div className="about">
                     <p>{data.bio}</p>
-                  </div>
+                  </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>Public Repositories:{" "}
                     {data.public_repos}{" "}
