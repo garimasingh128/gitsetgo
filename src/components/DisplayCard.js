@@ -27,6 +27,21 @@ const options = {
 };
 
 const DisplayCard = ({ data, repositories, langs, orgs }) => {
+  const repos = [];
+  {repositories.map((repo, i) => (
+    repos.push(
+      <tr key={repo.name} >
+        <td>{i}</td>
+        <td>{repo.language}</td>
+        <td> 
+          <a  href={repo.html_url} 
+              target="_blank">
+            {repo.name}
+          </a></td>
+      </tr>
+    )
+  ))}
+
   return (
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
       {data.name ? (
@@ -154,33 +169,22 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                   <h2 className="rit-titl">
                     <i className="fas fa-briefcase"></i>Repositories
                   </h2>
-
+                  
                   <div className="extra content">
                     <a>
                       <i className="address card icon"></i>
-                      {repositories.map((repo) => (
-                        <div
-                          classNameName="ui relaxed divided list"
-                          key={repo.name}
-                        >
-                          <div classNameName="item">
-                            <i classNameName="large github middle aligned icon"></i>
-                            <div classNameName="content">
-                              <ul>
-                                <li>
-                                  <a
-                                    href={repo.html_url}
-                                    classNameName="header"
-                                    target="_blank"
-                                  >
-                                    {repo.name}
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Language</th>
+                            <th>Repository Name</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {repos}
+                        </tbody>
+                      </table>
                     </a>
                   </div>
 
