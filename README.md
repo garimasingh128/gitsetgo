@@ -1,4 +1,6 @@
 # 👣 Git Set Go
+### A Github profile resume generator. ✨
+
 ## 😃😃 A Github profile resume generator. ✨
 
 ![Demo](./demo/demo.gif)
@@ -108,6 +110,11 @@ The project is created using create-react-app and based on React.js framework.
 
 ## 🚀 Steps to setup development environment
 
+1.  Fork the repo to your account.
+  ![Fork the gitsetgo repository](https://user-images.githubusercontent.com/51092036/91578681-25e72f80-e968-11ea-8f66-f679ed01cdfd.png)
+
+2. Go to Git Bash and Clone the forked repo i.e. the gitsetgo repo that has been added to your account using:
+
 <p></p>
 <img src="https://media.giphy.com/media/24akSucLOFwwoZamdr/giphy.gif">
 <p></p>
@@ -116,12 +123,21 @@ The project is created using create-react-app and based on React.js framework.
  ```bash
  git clone github.com/your_username/gitsetgo.git
  ```
- 2. Open the folder in your favorite code editor and start adding modifications.
+
+![Clone the gitsetgo repository](https://user-images.githubusercontent.com/51092036/91579201-e40ab900-e968-11ea-9453-53ad6813ae2c.png)
+
+3. Go to the gitsetgo folder on your PC through Git Bash and create a new branch:
+
+```bash
+ git checkout -b [your-name]
+ ```
+4. Open the folder in your favorite code editor and start adding modifications.
 
 ## 💻 Development guidelines
 
 1.  Put all the code in one of the existing files in  `/src`.
     
+3.  Push all the code to your own branch. Once you are sure it is working, merge it with the `develop`  branch. Let's maintain only the stable and released versions on the  `master`  branch.
 2.  Push all the code to your own branch. Once you are sure it is working, merge it with the `dev`  branch. Let's maintain only the stable and released versions on the  `master`  branch.
     
 3.  Write a kick-ass, readable, and clean code.
