@@ -1,25 +1,25 @@
 footer {
-    color: #fff;
-    font-size: 15px;
-    background-color: #C26C53;
-    font-family: cursive;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
+  color: #fff;
+  font-size: 15px;
+  background-color: #c26c53;
+  font-family: cursive;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
 }
 
 footer p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 footer i {
-    color: red;
+  color: red;
 }
 
 footer a {
-    color: #6435C9;
-    text-decoration: none;
+  color: #6435c9;
+  text-decoration: none;
 }
