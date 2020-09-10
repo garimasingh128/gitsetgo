@@ -137,17 +137,29 @@ The project is created using create-react-app and based on React.js framework.
 
 ## 💻 Development guidelines
 
-1.  Put all the code in one of the existing files in  `/src`.
-    
-2.  Push all the code to your own branch. 
-
-3.  Once you are sure it is working, merge it with the `dev`  branch if you are a <strong>general participant</strong>. If you are a <strong>hakincodes participant</strong> merge it with the 'hakincodes' branch. Let's maintain only the stable and released versions on the  `master`  branch.
-
 <p></p>
 <img src="https://media.giphy.com/media/xUPGcvhUgXewgRDgru/giphy.gif">
 <p></p>
 
-5.  Write a kick-ass, readable, and clean code.
+<strong>For general participants</strong>
+
+1.  Put all the code in one of the existing files in  `/src`.
+    
+2.  Push all the code to your own branch. 
+
+3.  Once you are sure it is working, merge it with the `develop`  branch . Let's maintain only the stable and released versions on the  `master`  branch.
+
+5.  Write kick-ass, readable, and clean code.
+
+<strong>For Hakincodes participants</strong>
+
+1.  Put all the code in one of the existing files in  `/src`.
+    
+2.  Push all the code to your own branch. 
+
+3.  Once you are sure it is working, merge it with the `hakincodes`  branch . Let's maintain only the stable and released versions on the  `master`  branch.
+
+5.  Write kick-ass, readable, and clean code.
 
 ## 💻 Creating a PR
 
