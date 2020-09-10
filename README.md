@@ -179,11 +179,11 @@ The project is created using create-react-app and based on React.js framework.
  ```
  4. Once you push the changes to your repo, the Compare & pull request button will appear in GitHub.
  
- <img src="https://i.postimg.cc/0zYZGgdS/pr1.png" alt="pr1" width="300px" height="300px"/>
+ <img src="https://i.postimg.cc/0zYZGgdS/pr1.png" alt="pr1" width="650px" height="300px"/>
  
  5. Click it and you'll be taken to this screen.
  
- <img src="https://i.postimg.cc/TyT0CkC4/pr2.png" alt="pr2" width="300px" height="300px"/>
+ <img src="https://i.postimg.cc/TyT0CkC4/pr2.png" alt="pr2" width="650px" height="300px"/>
  
  6. Type a proper description and give the PR an appropriate title. Finally, Open a pull request by clicking the Create pull request button.
  
