@@ -61,6 +61,8 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
 
  ➡️   [Development Guidelines](#-development-guidelines)
  
+ ➡️   [Creating a PR](#-creating-a-pr)
+ 
  ➡️   [Learning Resources](#-learning-resources)
  
  ➡️   [Future Plans](#-future-plans)
@@ -135,12 +137,61 @@ The project is created using create-react-app and based on React.js framework.
 
 ## 💻 Development guidelines
 
+<p></p>
+<img src="https://media.giphy.com/media/xUPGcvhUgXewgRDgru/giphy.gif">
+<p></p>
+
+<strong>For general participants</strong>
+
 1.  Put all the code in one of the existing files in  `/src`.
     
-3.  Push all the code to your own branch. Once you are sure it is working, merge it with the `develop`  branch. Let's maintain only the stable and released versions on the  `master`  branch.
-2.  Push all the code to your own branch. Once you are sure it is working, merge it with the `dev`  branch. Let's maintain only the stable and released versions on the  `master`  branch.
+2.  Push all the code to your own branch. 
+
+3.  Once you are sure it is working, merge it with the `develop`  branch . Let's maintain only the stable and released versions on the  `master`  branch.
+
+5.  Write kick-ass, readable, and clean code.
+
+<strong>For Hakincodes participants</strong>
+
+1.  Put all the code in one of the existing files in  `/src`.
     
-3.  Write a kick-ass, readable, and clean code.
+2.  Push all the code to your own branch. 
+
+3.  Once you are sure it is working, merge it with the `hakincodes`  branch . Let's maintain only the stable and released versions on the  `master`  branch.
+
+5.  Write kick-ass, readable, and clean code.
+
+## 💻 Creating a PR
+
+1. After making sure that ur code is working fine, you need to add these files to the staging area.
+ ```bash
+ git add <file-name>
+ ```
+ 
+ 2. Once your files are added, you need to commit the changes with an appropriate commit message.
+  ```bash
+ git commit -m "<your-message>"
+ ```
+ 
+ 3. After committing the changes, you need to push the changes
+ ```bash
+ git push origin <branch-name>
+ ```
+ 4. Once you push the changes to your repo, the Compare & pull request button will appear in GitHub.
+ 
+ <img src="https://i.postimg.cc/0zYZGgdS/pr1.png" alt="pr1" width="650px" height="300px"/>
+ 
+ 5. Click it and you'll be taken to this screen.
+ 
+ <img src="https://i.postimg.cc/TyT0CkC4/pr2.png" alt="pr2" width="650px" height="300px"/>
+ 
+ 6. Type a proper description and give the PR an appropriate title. Finally, Open a pull request by clicking the Create pull request button.
+ 
+ 7. That's it. You have opened a PR. Wait for it to get merged.
+ 
+ <p></p>
+<img src="https://media.giphy.com/media/l0Iyl55kTeh71nTXy/giphy.gif">
+<p></p>
 
 ## 📝 Learning Resources
 
@@ -190,6 +241,10 @@ Read these articles to get a quick grab on handling Github API's and other techn
 -   Code Editor (Visual Studio Code, Sublime Text)
 
 ## 🏆 Contributing
+
+<p></p>
+<img src="https://media.giphy.com/media/l0MYLGjgThBb8C556/giphy.gif">
+<p></p>
 
 Please read  [CONTRIBUTING.md](CONTRIBUTING.md)  for information on how to contribute to profext-extension.
 
