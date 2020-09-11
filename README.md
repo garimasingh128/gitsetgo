@@ -11,12 +11,12 @@
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
 ![Maintained](https://img.shields.io/maintenance/yes/2020)
-![Last Commit](https://img.shields.io/github/last-commit/mrinal41298/gitsetgo)
-![Release Date](https://img.shields.io/github/release-date/mrinal41298/gitsetgo)
-![Issues](https://img.shields.io/github/issues/mrinal41298/gitsetgo)
-![Stars GitHub](https://img.shields.io/github/stars/mrinal41298/gitsetgo)
-![Language](https://img.shields.io/github/languages/top/mrinal41298/gitsetgo)
-![Size](https://img.shields.io/github/repo-size/mrinal41298/gitsetgo)
+![Last Commit](https://img.shields.io/github/last-commit/garimasingh128/gitsetgo)
+![Release Date](https://img.shields.io/github/release-date/garimasingh128/gitsetgo)
+![Issues](https://img.shields.io/github/issues/garimasingh128/gitsetgo)
+![Stars GitHub](https://img.shields.io/github/stars/garimasingh128/gitsetgo)
+![Language](https://img.shields.io/github/languages/top/garimasingh128/gitsetgo)
+![Size](https://img.shields.io/github/repo-size/garimasingh128/gitsetgo)
 
 ## 👩‍ Demo PDF generated
 
