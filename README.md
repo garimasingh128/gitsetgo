@@ -10,13 +10,13 @@
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
 ![Maintained](https://img.shields.io/maintenance/yes/2020)
-![Last Commit](https://img.shields.io/github/last-commit/mrinal41298/gitsetgo)
-![Release Date](https://img.shields.io/github/release-date/mrinal41298/gitsetgo)
-![Issues](https://img.shields.io/github/issues/mrinal41298/gitsetgo)
-![Stars GitHub](https://img.shields.io/github/stars/mrinal41298/gitsetgo)
+![Last Commit](https://img.shields.io/github/last-commit/garimasingh128/gitsetgo)
+![Release Date](https://img.shields.io/github/release-date/garimasingh128/gitsetgo)
+![Issues](https://img.shields.io/github/issues/garimasingh128/gitsetgo)
+![Stars GitHub](https://img.shields.io/github/stars/garimasingh128/gitsetgo)
 ![Forks](https://img.shields.io/github/forks/garimasingh128/gitsetgo)
-![Language](https://img.shields.io/github/languages/top/mrinal41298/gitsetgo)
-![Size](https://img.shields.io/github/repo-size/mrinal41298/gitsetgo)
+![Language](https://img.shields.io/github/languages/top/garimasingh128/gitsetgo)
+![Size](https://img.shields.io/github/repo-size/garimasingh128/gitsetgo)
 ![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fgarimasingh128%2Fgitsetgo)
 
 
@@ -105,7 +105,7 @@ The project is created using create-react-app and based on React.js framework.
 -  HTML: 10.3%
 -  CSS: 5.2%
    <p></p>
-  <img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="300px" height="300px"><img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="300px" height="300px">
+  <img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="350px" height="300px"><img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="350px" height="300px">
 
 ## 👬 Design and Roadmap
 - The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id=0%3A1) we intended to follow is present here. Feel free to suggest ideas and opinions.
@@ -179,11 +179,11 @@ The project is created using create-react-app and based on React.js framework.
  ```
  4. Once you push the changes to your repo, the Compare & pull request button will appear in GitHub.
  
- <img src="https://i.postimg.cc/0zYZGgdS/pr1.png" alt="pr1" width="650px" height="300px"/>
+ <img src="https://user-images.githubusercontent.com/51456744/92990099-df144080-f4f6-11ea-8946-013efd5d0d4e.png" alt="pr1" width="650px" height="300px"/>
  
  5. Click it and you'll be taken to this screen.
  
- <img src="https://i.postimg.cc/TyT0CkC4/pr2.png" alt="pr2" width="650px" height="300px"/>
+ <img src="https://user-images.githubusercontent.com/51456744/92989977-e4bd5680-f4f5-11ea-8880-8cc32b51a129.png" alt="pr2" width="650px" height="300px"/>
  
  6. Type a proper description and give the PR an appropriate title. Finally, Open a pull request by clicking the Create pull request button.
  
@@ -259,7 +259,7 @@ Please adhere towards our [code-of-conduct.md](code-of-conduct.md).
 <a href="https://github.com/garimasingh128"><img src="https://avatars3.githubusercontent.com/u/44302373?s=460&u=efaafa72f4d83d40b66fc68258d14cebbf1d7de0&v=4" width="100px;" alt=""/><br /><sub><b>Garima Singh</b></sub></a><br/>
 <a href="https://github.com/mrinal41298"><img src="https://avatars3.githubusercontent.com/u/55679963?s=460&u=66c9d1ec2ce9183bb517311a4f5ff32286e4df72&v=4" width="100px;" alt=""/><br /><sub><b>Mrinal Kumar</b></sub></a><br />
 
-[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/mrinal41298/)
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/garimasingh128/)
 
 ## ❤️ Thanks to our awesome contributors
 
