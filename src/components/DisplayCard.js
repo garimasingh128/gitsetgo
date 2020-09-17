@@ -48,7 +48,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
         <div>
           <ReactToPdf
             targetRef={ref}
-            filename="resume_github.pdf"
+            filename = {data.name + "_Github_Resume"}
             options={options}
             scale={0.7}
             style={{height:500}}
