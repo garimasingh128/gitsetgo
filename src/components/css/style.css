@@ -564,9 +564,15 @@ body {
       padding: 0px; }
   .rit-cover .profess-cover .progress-bar {
     background-color: #00ab9f; }
-table, tr, td, th {
-  border: 3px solid rgb(192, 190, 190);
+table {
+  border: 0;
+  border-radius: 15px;
 }
+tr, td, th {
+  border-bottom: 1px solid rgb(192, 190, 190);
+  padding: 5px 10px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
 table {
   border-collapse: collapse;
   width: 70%;
@@ -574,7 +580,9 @@ table {
 }
 th {
   height: 20px;
-  text-align: center;
+  text-align: left;
+  background-color: #5829bb;
+  color: white;
 }
 
 
