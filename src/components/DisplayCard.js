@@ -28,7 +28,7 @@ const options = {
 
 const DisplayCard = ({ data, repositories, langs, orgs }) => {
   const repos = [];
-  repositories.map((repo, i) => (
+  repositories.filter((repo) => (repo.fork === false)).map((repo, i) => (
     repos.push(
       <tr key={repo.name} >
         <td>{i+1}</td>
