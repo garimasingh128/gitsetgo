@@ -32,16 +32,18 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
   const imgChange = (e) => {
 		setImage(URL.createObjectURL(e.target.files[0]));
 	};
-  repositories.map((repo, i) => (
+  repositories.filter((repo) => (repo.fork === false)).map((repo, i) => (
     repos.push(
       <tr key={repo.name} >
-        <td>{i}</td>
-        <td>{repo.language}</td>
+        <td>{i+1}</td>
         <td> 
           <a  href={repo.html_url} 
-              target="_blank">
+              target="_blank"
+              rel="noopener noreferrer">
             {repo.name}
-          </a></td>
+          </a>
+        </td>
+        <td>{repo.language}</td>
       </tr>
     )
   ))
@@ -182,15 +184,15 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                     <i className="fas fa-briefcase"></i>Repositories
                   </h2>
                   
-                  <div className="extra content">
+                  <div className="extra content" style={{ overflowX: "auto"}}>
                     <a>
                       <i className="address card icon"></i>
                       <table>
                         <thead>
                           <tr>
                             <th>ID</th>
-                            <th>Language</th>
                             <th>Repository Name</th>
+                            <th>Language</th>
                           </tr>
                         </thead>
                         <tbody>
