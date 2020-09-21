@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/animate.css";
 import "./css/bootstrap.min.css";
 import "./css/bootstrap.min.css.map";
@@ -28,6 +28,10 @@ const options = {
 
 const DisplayCard = ({ data, repositories, langs, orgs }) => {
   const repos = [];
+  const [image, setImage] = useState(data.avatar_url);
+  const imgChange = (e) => {
+		setImage(URL.createObjectURL(e.target.files[0]));
+	};
   repositories.filter((repo) => (repo.fork === false)).map((repo, i) => (
     repos.push(
       <tr key={repo.name} >
@@ -73,10 +77,18 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                 <div className="left-side" style = {{marginTop:160}}>
                   <div className="profile-info" >
                     <img
-                      src={data.avatar_url}
-                      alt={data.avatar_url}
+                      src={image}
+                      alt={"profile_pic"}
                       style={{ marginTop: 60 }}
                     ></img>{" "}
+                    <form>
+                      <input
+                        type="file"
+                        name="user[image]"
+                        style={{ color: "transparent", marginTop: 10, marginLeft: 50}}
+                        onChange={imgChange}
+                      />
+                    </form>
                     <h3 >{data.name}</h3>
                   </div>
                   <h4 className="ltitle">Top Languages</h4>
