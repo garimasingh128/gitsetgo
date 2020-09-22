@@ -1,101 +1,62 @@
 import React from "react";
 
-import logo from "./images/logo.jpg"
+import styled from "styled-components";
 
-export default function App() {
+function Footer() {
+  let color_scheme =
+    window.localStorage.getItem("theme") === "light"
+      ? "no-preference: light; light: ligth; dark: light;"
+      : "no-preference: dark; dark: dark; light: dark;";
   return (
-    <footer
-      className="bottom"
-      style={{
-        background: "#343a40",
-        color: "#ffffff",
-        textAlign: "justify",
-        bottom: 0,
-        width: "100%",
-        
-        margin: 0,
-        padding: 0,
-        borderSize: "border-box",
-      
-      }}
-    >
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-          crossorigin="anonymous"
-        />
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-          crossorigin="anonymous"
-        />
-      </head>
-      <div className="container" >
-        <div className="row">
-          <div className="col-md-4 col 12" >
-            <img
-              src={logo}
-              alt=""
-              style={{ width:80,height:50 ,marginTop:5,borderStyle:"solid",borderColor:"black",border:1,borderRadius:7}}
-            />
-            <div>
-              <span style={{ display:"inline-block",marginTop:5  }}>Home | Blog | FAQ | Contact | About</span>
-            </div>
-          </div>
-          <div
-            className="col-md-3 col-12"
-            style={{marginTop:10}}
+    <footer style={{ background: "#343a40" }}>
+      <div style={{ marginTop: 5 }}>
+        <center>
+          {" "}
+          Made with
+          <heart> ❤ </heart> by
+          <a target="_blank" href="https://github.com/garimasingh128" style={{ color: "#59b7ff" }}
           >
-            <h4 style={{ color: "lightgrey" }}> Resources </h4>
-            <ul className="list-unstyled">
-              <li>Disclaimer</li>
-              <li>Reports</li>
-              <li>Terms</li>
-              <li>Conditions</li>
-              <li>Privacy Policy</li>
-            </ul>
-          </div>
-          <div
-            className="col-md-4 col-12"
-            style={{ marginTop:10 }}
+            {" "}
+            Garima Singh{" "}
+          </a>{" "}
+          and
+          <a target="_blank" href="https://github.com/mrinal41298" style={{ color: "#59b7ff" }}
           >
-            <h4 style={{ color: "lightgrey" }}> About The Project </h4>
-            <div>
-              A Github Resume generator to create your own personalised resume
-              based on your Github profile. This tool lets you have your resume
-              on a single click.
-            </div>
-          </div>
-
-          <div className="row" style={{ color: "lightgrey", float: "left" }}>
-            <div className="col">
-              &copy; {new Date().getFullYear()} GitSetGo | All Rights Reserved
-            </div>
-          </div>
-          <div className="col-md-12 col-12">
-            <i
-              class="fa fa-facebook-official"
-              aria-hidden="true"
-              style={{ padding: 10 , color:"white",float:"right"}}
-            >
-              {" "}
-            </i>
-            <i
-              class="fa fa-twitter-square"
-              aria-hidden="true"
-              style={{ padding: 10 , color:"white",float:"right"}}
-            ></i>
-            <i
-              class="fa fa-github-square"
-              aria-hidden="true"
-              style={{ padding: 10, color:"white",float:"right" }}
-            ></i>
-          </div>
+            {" "}
+            Mrinal
+          </a>
+        </center>
+        <br />
+        <div className="git-footer" style={{ marginBottom: 5, marginTop: -10 }}>
+          <a
+            className="github-button"
+            href="https://github.com/garimasingh128"
+            style={{ marginRight: 10 }}
+            aria-label="Follow @garimasingh128 on GitHub"
+          >
+            Follow @garimasingh128
+          </a>
+          <spacer />
+          <a
+            className="github-button"
+            style={{ margin: 10 }}
+            href="https://github.com/mrinal41298"
+            aria-label="Follow @mrinal41298 on GitHub"
+          >
+            <spacer />
+            Follow @mrinal41298
+          </a>
         </div>
       </div>
     </footer>
   );
 }
+
+export default Footer;
+
+// data-color-scheme="no-preference: dark; light: dark; dark: dark;"
+// data-color-scheme="no-preference: dark; light: dark; dark: dark;"
+
+const heart = styled.div`
+  color: red;
+`;
