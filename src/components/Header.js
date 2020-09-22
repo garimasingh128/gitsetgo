@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "./images/daftpunktocat.gif";
-
-=======
 import '../App.css';
 
 const Header = () => {
