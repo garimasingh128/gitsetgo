@@ -74,7 +74,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
           <div className="container profile-box" ref={ref} style = { {marginTop: 40}}>
             <div className="row">
               <div className="col-md-4 left-co" >
-                <div className="left-side" style = {{marginTop:160}}>
+                <div className="left-side">
                   <div className="profile-info" >
                     <img
                       src={image}
