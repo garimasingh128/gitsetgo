@@ -1,35 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 function Footer() {
   let color_scheme =
-    window.localStorage.getItem('theme') === 'light'
-      ? 'no-preference: light; light: ligth; dark: light;'
-      : 'no-preference: dark; dark: dark; light: dark;';
+    window.localStorage.getItem("theme") === "light"
+      ? "no-preference: light; light: ligth; dark: light;"
+      : "no-preference: dark; dark: dark; light: dark;";
   return (
-    <footer style={{ background: '#343a40' }}>
+    <footer style={{ background: "#343a40" }}>
       <div style={{ marginTop: 5 }}>
         <center>
-          {' '}
+          {" "}
           Made with
           <heart> ❤ </heart> by
-          <a
-            target="_blank"
-            href="https://github.com/garimasingh128"
-            style={{ color: '#59b7ff' }}
+          <a target="_blank" href="https://github.com/garimasingh128" style={{ color: "#59b7ff" }}
           >
-            {' '}
-            Garima Singh{' '}
-          </a>{' '}
+            {" "}
+            Garima Singh{" "}
+          </a>{" "}
           and
-          <a
-            target="_blank"
-            href="https://github.com/mrinal41298"
-            style={{ color: '#59b7ff' }}
+          <a target="_blank" href="https://github.com/mrinal41298" style={{ color: "#59b7ff" }}
           >
-            {' '}
+            {" "}
             Mrinal
           </a>
         </center>
@@ -53,15 +46,6 @@ function Footer() {
             <spacer />
             Follow @mrinal41298
           </a>
-        </div>
-        <div style={{ marginTop: 5 }}>
-          {/* <a class="footer-links" href="">Privacy</a> */}
-          <Link
-            to="/privacy-policy"
-            style={{ fontFamily: 'sans-serif', color: 'whitesmoke', fontSize: 14 }}
-          >
-            Privacy
-          </Link>
         </div>
       </div>
     </footer>

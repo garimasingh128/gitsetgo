@@ -12,7 +12,6 @@ import * as jsPDF from 'jspdf'
 import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Routes from './routes';
 
 
 const ref = React.createRef();
@@ -40,16 +39,15 @@ export default class App extends Component {
   render() {
     return (<div className="App">
 
-      {/* <Header/> */}
+      <Header/>
      
 
-       {/* <Profile/> */}
-       <Routes />
+       <Profile/>
         
       
-      {/* <Footer> */}
+      <Footer>
      
-      {/* </Footer> */}
+      </Footer>
       
         {/* <Header />
          
