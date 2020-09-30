@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import "./css/animate.css";
 import "./css/bootstrap.min.css";
 import "./css/bootstrap.min.css.map";
@@ -39,7 +40,7 @@ const DisplayCard = ({ data, repositories }) => {
           >
             {({ toPdf }) => (
               <button
-                style={{ marginLeft: 20, marginTop: 20 }}
+                style={{ marginLeft: 10, marginTop: 20 }}
                 className="ui red button"
                 type="submit"
                 onClick={toPdf}
@@ -49,7 +50,8 @@ const DisplayCard = ({ data, repositories }) => {
               </button>
             )}
           </ReactToPdf>
-          <div className="container profile-box" ref={ref}>
+          <Generate>
+          <div className="container profile-box card" ref={ref}>
             <div className="row">
               <div className="col-md-4 left-co">
                 <div className="left-side">
@@ -193,16 +195,25 @@ const DisplayCard = ({ data, repositories }) => {
               </div>
             </div>
           </div>
+          </Generate>
         </div>
       ) : (
         <div >
           <img src={undraw} style={{width: 1500, height: 400, marginTop: 40}}></img>
-          </div>
+        </div>
       )}
     </div>
   );
 };
 
 export default DisplayCard;
+const Generate = styled.div`
+  @media screen and (max-width:1060px) {
+    .card{
+      margin-top: 30px;
+    }
+
+  }
+`;
 
 //https://api.github.com/users/garimasingh128/repos

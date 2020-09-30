@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import DisplayCard from "./DisplayCard";
 
 
@@ -29,7 +30,7 @@ const Profile = () => {
     }
   };
   return (
-    <>
+    <ProfileC>
       <div style={{ padding: 20 }} >
         <div className="ui search">
           <div className="ui icon input">
@@ -52,19 +53,31 @@ const Profile = () => {
             <i className="github icon"></i>
             Go ahead!
           </button>
-          
+
           <center>
-            
+
             <DisplayCard
-           
+
               data={data}
               repositories={repositories}
             />
           </center>
         </div>
-        
+
       </div>
-    </>
+    </ProfileC>
   );
 };
 export default Profile;
+const ProfileC= styled.div`
+  @media screen and (max-width:425px){
+    .search{
+      margin-top:15px;
+    }
+    .violet{
+      margin-left: 10px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  }
+`;

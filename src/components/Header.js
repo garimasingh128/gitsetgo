@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <NavbarC>
       {" "}
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-dark bg-dark logo">
         <img
           src={logo}
           width="50"
@@ -15,23 +15,23 @@ const Header = () => {
         />
       </nav>
      {" "}
-      <nav class="navbar navbar-light " style={{ background: "#343a40" }}>
+      <nav class="navbar navbar-light head" style={{ background: "#343a40" }}>
         <a
           href="./"
           style={{ color: "#ffffff" }}
+          class="head-line"
         >
           Git Set Go
         </a>{" "}
-      </nav>{" "}
+      </nav>
+      {" "}
       <spacer /> <spacer /> <spacer /> <spacer /> <spacer />{" "}
-      <center>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark bg-dark subhead">
           {" "}
           <p style={{ fontSize: 15 }}>
             A Personalised Github Resume{" "}
           </p>
-        </nav>
-      </center>{" "}
+        </nav>{" "}
     </NavbarC>
   );
 };
@@ -45,6 +45,35 @@ const NavbarC = styled.div`
   align-items: center;
   height: 100%;
   padding: 0 1rem;
+  @media screen and (max-width:600px) {
+      display: block ;
+      .logo{
+        position:absolute;
+        z-index:1;
+      }
+      .head-line{
+        margin:auto;
+      }
+      .head{
+        position:relative;
+      }
+  }
+  @media screen and (max-width:400px) {
+    padding-left: 0.5rem;
+    text-align:left;
+    .head-line{
+      margin:0;
+    }
+    .logo{
+      padding: 7px 0;
+      position:static;
+      float:left;
+
+    }
+    .subhead{
+      clear:left;
+    }
+  }
   spacer {
     flex: 0.01;
   }
