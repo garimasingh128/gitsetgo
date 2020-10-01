@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/animate.css";
 import "./css/bootstrap.min.css";
 import "./css/bootstrap.min.css.map";
@@ -26,7 +26,28 @@ const options = {
   unit: "cm",
 };
 
-const DisplayCard = ({ data, repositories }) => {
+const DisplayCard = ({ data, repositories, langs, orgs }) => {
+  const repos = [];
+  const [image, setImage] = useState(data.avatar_url);
+  const imgChange = (e) => {
+		setImage(URL.createObjectURL(e.target.files[0]));
+	};
+  repositories.filter((repo) => (repo.fork === false)).map((repo, i) => (
+    repos.push(
+      <tr key={repo.name} >
+        <td>{i+1}</td>
+        <td> 
+          <a  href={repo.html_url} 
+              target="_blank"
+              rel="noopener noreferrer">
+            {repo.name}
+          </a>
+        </td>
+        <td>{repo.language}</td>
+      </tr>
+    )
+  ))
+
   return (
 
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
@@ -34,9 +55,10 @@ const DisplayCard = ({ data, repositories }) => {
         <div>
           <ReactToPdf
             targetRef={ref}
-            filename="resume_github.pdf"
+            filename = {data.name + "_Github_Resume"}
             options={options}
             scale={0.7}
+            style={{height:500}}
           >
             {({ toPdf }) => (
               <button
@@ -50,20 +72,33 @@ const DisplayCard = ({ data, repositories }) => {
               </button>
             )}
           </ReactToPdf>
-          <div className="container profile-box" ref={ref}>
+          <div className="container profile-box" ref={ref} style = { {marginTop: 40}}>
             <div className="row">
-              <div className="col-md-4 left-co">
+              <div className="col-md-4 left-co" >
                 <div className="left-side">
-                  <div className="profile-info">
+                  <div className="profile-info" >
                     <img
-                      src={data.avatar_url}
-                      alt={data.avatar_url}
-                      style={{ marginTop: 30 }}
+                      src={image}
+                      alt={"profile_pic"}
+                      style={{ marginTop: 60 }}
                     ></img>{" "}
-                    <h3>{data.name}</h3>
+                    <form>
+                      <input
+                        type="file"
+                        name="user[image]"
+                        style={{ color: "transparent", marginTop: 10, marginLeft: 50}}
+                        onChange={imgChange}
+                      />
+                    </form>
+                    <h3 >{data.name}</h3>
                   </div>
+                  <h4 className="ltitle">Top Languages</h4>
+                  <div>{langs.filter((lang) => lang.label !== "Others").slice(0, 3).map((lang) => (
+                    <div key={lang.label}>
+                      <img src={"https://img.shields.io/badge/-" + lang.label + "-" + lang.color.replace('#', '')} alt={`${lang.label}`}/>
+                    </div>
+                  ))}</div>
                   <h4 className="ltitle">Contact</h4>
-
                   {data.email ? (
                     <div className="contact-box pb0">
                       <div className="icon">
@@ -88,9 +123,19 @@ const DisplayCard = ({ data, repositories }) => {
                   </ul>
                   <h4 className="ltitle">Organisations</h4>
 
-                  <div className="refer-cov">
-                    <b>{data.company}</b>
-                  </div>
+                  <div>{orgs.map((organization) => (
+                      <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={"https://github.com/" + organization.login}
+                      >
+                        <img
+                          src={organization.avatar_url}
+                          alt={organization.avatar_url}
+                          style={{ marginTop: 15, width: 50, marginLeft: 10 }}
+                        ></img>
+                      </a>
+                  ))}</div>
 
                   <h4 className="ltitle">
                     Followers: <i className="fas fa-pencil-alt"></i>
@@ -120,13 +165,13 @@ const DisplayCard = ({ data, repositories }) => {
                   <div className="hotkey">
                     <h1 className="">{data.name}</h1>
                     <small>{data.login}</small>
-                  </div>
+                  </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>About
                   </h2>
                   <div className="about">
                     <p>{data.bio}</p>
-                  </div>
+                  </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>Public Repositories:{" "}
                     {data.public_repos}{" "}
@@ -139,33 +184,22 @@ const DisplayCard = ({ data, repositories }) => {
                   <h2 className="rit-titl">
                     <i className="fas fa-briefcase"></i>Repositories
                   </h2>
-
-                  <div className="extra content">
+                  
+                  <div className="extra content" style={{ overflowX: "auto"}}>
                     <a>
                       <i className="address card icon"></i>
-                      {repositories.map((repo) => (
-                        <div
-                          classNameName="ui relaxed divided list"
-                          key={repo.name}
-                        >
-                          <div classNameName="item">
-                            <i classNameName="large github middle aligned icon"></i>
-                            <div classNameName="content">
-                              <ul>
-                                <li>
-                                  <a
-                                    href={repo.html_url}
-                                    classNameName="header"
-                                    target="_blank"
-                                  >
-                                    {repo.name}
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Repository Name</th>
+                            <th>Language</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {repos}
+                        </tbody>
+                      </table>
                     </a>
                   </div>
 
@@ -179,14 +213,14 @@ const DisplayCard = ({ data, repositories }) => {
                           Blog:
                           <spacer />
                         </span>
-                        {data.blog}
+                        <a href={data.blog}>{data.blog}</a>
                       </li>
                       <li className="col-md-6">
                         <span>
                           Github Profile:
                           <spacer />
                         </span>
-                        {data.html_url}
+                        <a href={data.html_url}>{data.html_url}</a>
                       </li>
                     </ul>
                   </div>
