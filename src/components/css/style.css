@@ -382,4 +382,34 @@ body {
   .rit-cover .profess-cover .progress-bar {
     background-color: #00ab9f; }
 
+    .nav-header{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #fff;
+      font-size: 30px;
+      -webkit-animation: neon2 1s ease-in-out infinite alternate;
+      -moz-animation: neon2 1s ease-in-out infinite alternate;
+      animation: neon2 1s ease-in-out infinite alternate;  
+    }
+    .nav-header:hover{
+      -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+       animation: neon2 1.5s ease-in-out infinite alternate;
+    }
+    p.nav-text {
+      color: #FFF;
+      font-size: 17px;
+      letter-spacing: 1px;
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: type 4s steps(50, end) infinite;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-shadow:
+          3px 3px 0 #000,
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+         -1px 6px 0 #000,
+          1px 6px 0 #000;
+      }
+  
 /*# sourceMappingURL=style.css.map */

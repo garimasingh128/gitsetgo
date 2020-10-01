@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "./images/daftpunktocat.gif";
+import './css/style.css';
 const Header = () => {
   return (
     <NavbarC>
@@ -16,9 +17,8 @@ const Header = () => {
       </nav>
      {" "}
       <nav class="navbar navbar-light " style={{ background: "#343a40" }}>
-        <a
-          href="./"
-          style={{ color: "#ffffff" }}
+        <a className ="nav-header"
+          href="./"    
         >
           Git Set Go
         </a>{" "}
@@ -27,7 +27,7 @@ const Header = () => {
       <center>
         <nav class="navbar navbar-dark bg-dark">
           {" "}
-          <p style={{ fontSize: 15 }}>
+          <p className="nav-text">
             A Personalised Github Resume{" "}
           </p>
         </nav>

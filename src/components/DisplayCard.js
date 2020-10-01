@@ -28,6 +28,7 @@ const options = {
 
 const DisplayCard = ({ data, repositories }) => {
   return (
+
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
       {data.name ? (
         <div>
