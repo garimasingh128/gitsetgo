@@ -1,34 +1,34 @@
-
 # 👣 Git Set Go
-### 😃😃 A Github profile resume generator. ✨
+### A Github profile resume generator. ✨
+
+## 😃😃 A Github profile resume generator. ✨
 
 ![Demo](./demo/demo.gif)
-
-
 
 ![Author](https://img.shields.io/badge/author-garimasingh128-orange)
 ![Author](https://img.shields.io/badge/author-mrinal41298-orange)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
 ![Maintained](https://img.shields.io/maintenance/yes/2020)
-![Last Commit](https://img.shields.io/github/last-commit/mrinal41298/gitsetgo)
-![Release Date](https://img.shields.io/github/release-date/mrinal41298/gitsetgo)
-![Issues](https://img.shields.io/github/issues/mrinal41298/gitsetgo)
-![Stars GitHub](https://img.shields.io/github/stars/mrinal41298/gitsetgo)
-![Language](https://img.shields.io/github/languages/top/mrinal41298/gitsetgo)
-![Size](https://img.shields.io/github/repo-size/mrinal41298/gitsetgo)
+![Last Commit](https://img.shields.io/github/last-commit/garimasingh128/gitsetgo)
+![Release Date](https://img.shields.io/github/release-date/garimasingh128/gitsetgo)
+![Issues](https://img.shields.io/github/issues/garimasingh128/gitsetgo)
+![Stars GitHub](https://img.shields.io/github/stars/garimasingh128/gitsetgo)
+![Forks](https://img.shields.io/github/forks/garimasingh128/gitsetgo)
+![Language](https://img.shields.io/github/languages/top/garimasingh128/gitsetgo)
+![Size](https://img.shields.io/github/repo-size/garimasingh128/gitsetgo)
+![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fgarimasingh128%2Fgitsetgo)
+
+
 
 ## 👩‍ Demo PDF generated
-
 <div align="center">
-
-<img src="./demo/ss.png" width="600">
+  <img src="./demo/ss.png" width="300" height="300">
 </div>
 
 A Github Resume generator 👨‍💻👩‍ to create your own personalised resume based on your Github profile. 🔎 This tool lets you have your resume on a single click.
 
-
-# This project is a part of Hakin Codes 2020 👣
+## This project is a part of Hakin Codes 2020 👣
   OPEN SOURCE CONTEST - Hakin Codes
   ### About HakinCodes 2020 💻
   HakinCodes is founded with a vision to impart technical knowledge with practical implementations to all the students and developers around.
@@ -48,26 +48,25 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
 <img src="./demo/HakinCodes Logo.png" width="300" height="300">
 </div>
 
-
-
-
 ⭐ [Check out the website of HackinCodes 2020](https://hakincodes.tech)
 
 ## 📋 Table of Contents
  ➡️   [Vision](#-vision)
 
  ➡️   [Project Structure](#-project-structure)
- 
+
  ➡️   [Tech Stack](#-tech-stack)
  
  ➡️   [Setup Development Environment](#-steps-to-setup-development-environment)
 
  ➡️   [Development Guidelines](#-development-guidelines)
  
+ ➡️   [Creating a PR](#-creating-a-pr)
+ 
  ➡️   [Learning Resources](#-learning-resources)
  
-➡️   [Future Plans](#-future-plans)
-
+ ➡️   [Future Plans](#-future-plans)
+ 
  ➡️   [System Requirements](#-system-requirements)
  
  ➡️   [Contributing](#-contributing)
@@ -76,17 +75,19 @@ At HakinCodes we maintain a trustworthy and healthy environment and respect each
  
  ➡️   [How to run it locally?](#-Running-it-locally)
 
-
-
-
-
 ## 👩‍ Vision
 Getting your Github profile under a single page in a resume type-of format so that you can simply put your Github resume when applying to internships or job profiles.
+<div align="center">
+  <img src="https://media.giphy.com/media/2higF6P3xOhMY/giphy.gif" width="200px" height="200px">
+</div>
 
 ## ❤️ Inspiration
 We were inspired to create it when we saw that not many tools are available open-source or on the Internet which do the job we intend to do. So we decided to create it as a side-project based purely to learn and have some fun juggling with Github APIs'.
 
-## 🤷 Project Structure
+## 🤷 Project Structure 
+  <img src="./demo/file_icon.jpg" width="100" height="100">
+  <p></p>
+  
     .
     ├── ...
     ├── .github
@@ -99,81 +100,155 @@ We were inspired to create it when we saw that not many tools are available open
     
 ## 🔆 Tech Stack
 The project is created using create-react-app and based on React.js framework.
--  JavaScript: 84.5%
+
+-  JavaScript + React: 84.5% 
 -  HTML: 10.3%
 -  CSS: 5.2%
+   <p></p>
+  <img src="https://blog.kiprosh.com/content/images/2019/11/setup-react-web.gif" width="350px" height="300px"><img src="https://morganwebtechnology.com/frontend1/page/design.gif" width="350px" height="300px">
 
 ## 👬 Design and Roadmap
-The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id=0%3A1) we intended to follow is present here. Feel free to suggest ideas and opinions.
+- The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id=0%3A1) we intended to follow is present here. Feel free to suggest ideas and opinions.
 
 ## 🚀 Steps to setup development environment
-1.  Clone the repo
+
+1.  Fork the repo to your account.
+  ![Fork the gitsetgo repository](https://user-images.githubusercontent.com/51092036/91578681-25e72f80-e968-11ea-8f66-f679ed01cdfd.png)
+
+2. Go to Git Bash and Clone the forked repo i.e. the gitsetgo repo that has been added to your account using:
+
+<p></p>
+<img src="https://media.giphy.com/media/24akSucLOFwwoZamdr/giphy.gif">
+<p></p>
+
+ 1.  Clone the repo
  ```bash
  git clone github.com/your_username/gitsetgo.git
  ```
- 2. Open the folder in your favorite code editor and start adding modifications.
 
- ## 💻 Development guidelines
+![Clone the gitsetgo repository](https://user-images.githubusercontent.com/51092036/91579201-e40ab900-e968-11ea-9453-53ad6813ae2c.png)
+
+3. Go to the gitsetgo folder on your PC through Git Bash and create a new branch:
+
+```bash
+ git checkout -b [your-name]
+ ```
+4. Open the folder in your favorite code editor and start adding modifications.
+
+## 💻 Development guidelines
+
+<p></p>
+<img src="https://media.giphy.com/media/xUPGcvhUgXewgRDgru/giphy.gif">
+<p></p>
+
+<strong>For general participants</strong>
 
 1.  Put all the code in one of the existing files in  `/src`.
     
-3.  Push all the code to your own branch. Once you are sure it is working, merge it with the `dev`  branch. Let's maintain only the stable and released versions on the  `master`  branch.
+2.  Push all the code to your own branch. 
+
+3.  Once you are sure it is working, merge it with the `develop`  branch . Let's maintain only the stable and released versions on the  `master`  branch.
+
+5.  Write kick-ass, readable, and clean code.
+
+<strong>For Hakincodes participants</strong>
+
+1.  Put all the code in one of the existing files in  `/src`.
     
-4.  Write a kick-ass, readable, and clean code.
+2.  Push all the code to your own branch. 
+
+3.  Once you are sure it is working, merge it with the `hakincodes`  branch . Let's maintain only the stable and released versions on the  `master`  branch.
+
+5.  Write kick-ass, readable, and clean code.
+
+## 💻 Creating a PR
+
+1. After making sure that ur code is working fine, you need to add these files to the staging area.
+ ```bash
+ git add <file-name>
+ ```
+ 
+ 2. Once your files are added, you need to commit the changes with an appropriate commit message.
+  ```bash
+ git commit -m "<your-message>"
+ ```
+ 
+ 3. After committing the changes, you need to push the changes
+ ```bash
+ git push origin <branch-name>
+ ```
+ 4. Once you push the changes to your repo, the Compare & pull request button will appear in GitHub.
+ 
+ <img src="https://user-images.githubusercontent.com/51456744/92990099-df144080-f4f6-11ea-8946-013efd5d0d4e.png" alt="pr1" width="650px" height="300px"/>
+ 
+ 5. Click it and you'll be taken to this screen.
+ 
+ <img src="https://user-images.githubusercontent.com/51456744/92989977-e4bd5680-f4f5-11ea-8880-8cc32b51a129.png" alt="pr2" width="650px" height="300px"/>
+ 
+ 6. Type a proper description and give the PR an appropriate title. Finally, Open a pull request by clicking the Create pull request button.
+ 
+ 7. That's it. You have opened a PR. Wait for it to get merged.
+ 
+ <p></p>
+<img src="https://media.giphy.com/media/l0Iyl55kTeh71nTXy/giphy.gif">
+<p></p>
 
 ## 📝 Learning Resources
 
 Read these articles to get a quick grab on handling Github API's and other technologies used in the project:
 
-### Resources for learning React.js:
-- https://reactresources.com
-- https://reactjs.org/community/external-resources.html
-- https://reactjs.org/docs/getting-started.html
-- https://github.com/enaqx/awesome-react
+### Resources for learning React.js
+-   <https://reactresources.com>
+-   <https://reactjs.org/community/external-resources.html>
+-   <https://reactjs.org/docs/getting-started.html>
+-   <https://github.com/enaqx/awesome-react>
 
-### Migrating from Rest API to GraphQL API:
-- https://developer.github.com/v4/guides/migrating-from-rest/
-- https://docs.github.com/en/graphql
+### Migrating from Rest API to GraphQL API
+-   <https://developer.github.com/v4/guides/migrating-from-rest/>
+-   <https://docs.github.com/en/graphql>
 
-### Resources for Github APIs':
-- https://developer.github.com/v3/ 
-- https://developer.github.com/v4/ 
-- https://github.com/octokit/rest.js/ 
-- https://github.com/octokit/graphql.js
+### Resources for Github APIs'
+-   <https://developer.github.com/v3/>
+-   <https://developer.github.com/v4/>
+-   <https://github.com/octokit/rest.js/>
+-   <https://github.com/octokit/graphql.js>
 
-### Resources for node.js:
-- https://nodejs.org/en/about/resources/
-- https://github.com/sindresorhus/awesome-nodejs
-- https://www.tutorialsteacher.com/nodejs/nodejs-resources
+### Resources for node.js
+-   <https://nodejs.org/en/about/resources/>
+-   <https://github.com/sindresorhus/awesome-nodejs>
+-   <https://www.tutorialsteacher.com/nodejs/nodejs-resources>
 
 ### Resources for Prettier.io used in the project
-- [Prettier.io used in the project](https://prettier.io)
+-   [Prettier.io used in the project](https://prettier.io)
 
-### Resources to learn Git and Github:
-- https://try.github.io/
-- https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources
-- https://guides.github.com/activities/hello-world/
+### Resources to learn Git and Github
+-   <https://try.github.io/>
+-   <https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources>
+-   <https://guides.github.com/activities/hello-world/>
 
 ## ✨ Future Plans
-- Github Timeline 
-- Github competition between two users
-- Personalised template for resume
-- Enhancing the existing resume template
-- Showing Github feed of others
+-   Github Timeline 
+-   Github competition between two users
+-   Personalised template for resume
+-   Enhancing the existing resume template
+-   Showing Github feed of others
 
 `Feel free to create issues to suggest and add functionalities and features.`
 
-
 ## 💻 System Requirements
--  Google Chrome
--  Git
--  Code Editor (Visual Studio Code, Sublime Text)
+-   Google Chrome
+-   Git
+-   Code Editor (Visual Studio Code, Sublime Text)
 
 ## 🏆 Contributing
 
+<p></p>
+<img src="https://media.giphy.com/media/l0MYLGjgThBb8C556/giphy.gif">
+<p></p>
+
 Please read  [CONTRIBUTING.md](CONTRIBUTING.md)  for information on how to contribute to profext-extension.
 
-##  💼  Code of Conduct
+## 💼 Code of Conduct
 
 We want to facilitate a healthy and constructive community behavior by adopting and enforcing our code of conduct.
 
@@ -184,10 +259,9 @@ Please adhere towards our [code-of-conduct.md](code-of-conduct.md).
 <a href="https://github.com/garimasingh128"><img src="https://avatars3.githubusercontent.com/u/44302373?s=460&u=efaafa72f4d83d40b66fc68258d14cebbf1d7de0&v=4" width="100px;" alt=""/><br /><sub><b>Garima Singh</b></sub></a><br/>
 <a href="https://github.com/mrinal41298"><img src="https://avatars3.githubusercontent.com/u/55679963?s=460&u=66c9d1ec2ce9183bb517311a4f5ff32286e4df72&v=4" width="100px;" alt=""/><br /><sub><b>Mrinal Kumar</b></sub></a><br />
 
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/garimasingh128/)
 
-[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/mrinal41298/)
-
-## ❤️ Thanks to our awesome contributors.
+## ❤️ Thanks to our awesome contributors
 
 ## ✨ Running it locally
 
@@ -238,25 +312,24 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This section has moved here: <https://facebook.github.io/create-react-app/docs/code-splitting>
 
 ### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+This section has moved here: <https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size>
 
 ### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+This section has moved here: <https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app>
 
 ### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+This section has moved here: <https://facebook.github.io/create-react-app/docs/advanced-configuration>
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+This section has moved here: <https://facebook.github.io/create-react-app/docs/deployment>
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
+This section has moved here: <https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify>

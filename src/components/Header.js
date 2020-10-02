@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "./images/daftpunktocat.gif";
+import '../App.css';
+
 const Header = () => {
   return (
+    
     <NavbarC>
       {" "}
       <nav class="navbar navbar-dark bg-dark logo">
@@ -42,7 +45,8 @@ const NavbarC = styled.div`
   font-size: 25px;
   font-family: cursive;
   display: flex;
-  align-items: center;
+  justify-content:center:
+  flex-direction:coloumn;
   height: 100%;
   padding: 0 1rem;
   @media screen and (max-width:600px) {
@@ -75,6 +79,6 @@ const NavbarC = styled.div`
     }
   }
   spacer {
-    flex: 0.01;
+    flex: 0.03;
   }
 `;
