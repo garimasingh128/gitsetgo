@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import DisplayCard from "./DisplayCard";
+
 import Loader from "./images/Loader.svg";
 import GhPolyglot from "gh-polyglot";
 
@@ -11,6 +12,8 @@ const Profile = () => {
   const [isLoading, setLoading] = useState(false);
   const [langs, setLangs] = useState(sessionStorage.getItem("langs") ? JSON.parse(sessionStorage.getItem("langs")) : []);
   const [orgs, setOrgs] = useState(sessionStorage.getItem("orgs") ? JSON.parse(sessionStorage.getItem("orgs")) : []);
+  const [errorMessage, setErrorMessage] = useState(false);
+
 
   const onChangeHandler = (e) => {
     setUsername(e.target.value);
@@ -42,6 +45,7 @@ const Profile = () => {
       }
     } catch (err) {
       console.log(err.message);
+      setErrorMessage(true);
     }
     setLoading(false);
   };
@@ -76,20 +80,30 @@ const Profile = () => {
                 <i className="github icon"></i>
                 Go ahead!
               </button>
-    
-          <button
-            style={{ marginLeft: 20 }}
-            className="ui violet button"
-            type="submit"
-            onClick={submitHandler}
-          >
-            <i className="github icon"></i>
-            Go ahead!
-          </button>
-    
+
+              <div>
+            {errorMessage ? (
               <center>
-                <DisplayCard data={data} repositories={repositories} langs={langs} orgs={orgs}/>
+                <img
+                  src={image}
+                  alt={image}
+                  style={{width: 250, height: 100, marginTop: 40}}
+                  >
+                </img>
+                <h1 >User Not Found!!</h1>
               </center>
+            ) : (
+              <center>
+                <DisplayCard
+                  data={data}
+                  repositories={repositories}
+                  langs={langs}
+                  orgs={orgs}
+                  />
+              </center>
+          )}
+          </div>
+         )}
         </div>
       </div>
     </ProfileC>
