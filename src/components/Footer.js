@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./css/style.css";
 export default function App() {
   return (
     <footer
@@ -10,7 +10,8 @@ export default function App() {
         textAlign: "justify",
         bottom: 0,
         width: "100%",
-        position: " absolute",
+        position: "relative",
+        top: "70%",
         margin: 0,
         padding: 0,
         borderSize: "border-box"

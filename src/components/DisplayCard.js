@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import "./css/animate.css";
 import "./css/bootstrap.min.css";
@@ -13,7 +15,7 @@ import "./js/popper.js";
 // import "./js/bootstrap.min.js";
 // import "./js/script.js";
 
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import ReactToPdf from "react-to-pdf";
 
 // get our fontawesome imports
@@ -57,7 +59,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
             filename = {data.name + "_Github_Resume"}
             options={options}
             scale={0.7}
-            style={{height:500}}
+            style={{height:600}}
           >
             {({ toPdf }) => (
               <button
@@ -75,21 +77,21 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
             <div className="row">
               <div className="col-md-4 left-co" >
                 <div className="left-side">
-                  <div className="profile-info" >
+                  <div className="profile-info">
                     <img
                       src={image}
                       alt={"profile_pic"}
-                      style={{ marginTop: 60 }}
                     ></img>{" "}
                     <form>
                       <input
+                       className="btn btn-danger btn-xs"
                         type="file"
                         name="user[image]"
-                        style={{ color: "transparent", marginTop: 10, marginLeft: 50}}
+                        style={{ marginTop:"30px", width:"12.5vw", fontSize: "13px"}}
                         onChange={imgChange}
                       />
                     </form>
-                    <h3 >{data.name}</h3>
+                    <h3 style={{ fontSize: "18px"}}>{data.name}</h3>
                   </div>
                   <h4 className="ltitle">Top Languages</h4>
                   <div>{langs.filter((lang) => lang.label !== "Others").slice(0, 3).map((lang) => (
@@ -162,14 +164,14 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
               <div className="col-md-8 rt-div">
                 <div className="rit-cover">
                   <div className="hotkey">
-                    <h1 className="">{data.name}</h1>
-                    <small>{data.login}</small>
+                    <h1 className="" style={{ fontSize: "44px", color:"#19a093", fontFamily:"Montserrat"}}>{data.name}</h1>
+                    <small style={{ fontSize: "22px", opacity:"95%", color:"#19a093", fontFamily:"Montserrat"}}>{data.login}</small>
                   </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>About
                   </h2>
                   <div className="about">
-                    <p>{data.bio}</p>
+                    <p style={{fontSize:"17px", textAlign:"center", width: "99%", color: "black"}}>{data.bio}</p>
                   </div><br></br>
                   <h2 className="rit-titl">
                     <i className="far fa-user"></i>Public Repositories:{" "}
@@ -184,10 +186,10 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                     <i className="fas fa-briefcase"></i>Repositories
                   </h2>
                   
-                  <div className="extra content" style={{ overflowX: "auto"}}>
-                    <a>
+                  <div className="extra content" >
+                    <a href="#">
                       <i className="address card icon"></i>
-                      <table>
+                      <table style={{fontFamilt:"Montserrat", fontSize:"15px"}}>
                         <thead>
                           <tr>
                             <th>ID</th>
@@ -201,25 +203,25 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                       </table>
                     </a>
                   </div>
-
-                  <h2 className="rit-titl">
+                 
+                  <h2 className="rit-titl" style={{marginTop: "10px"}}>
                     <i className="fas fa-graduation-cap"></i>Important Links
                   </h2>
                   <div className="education">
                     <ul className="row no-margin">
                       <li className="col-md-6">
-                        <span>
+                        <span style={{fontSize: "15px", display: "block"}}>
                           Blog:
                           <spacer />
                         </span>
-                        <a href={data.blog}>{data.blog}</a>
+                        <a href={data.blog} style={{fontSize: "14px"}}>{data.blog}</a>
                       </li>
                       <li className="col-md-6">
-                        <span>
+                        <span style={{fontSize: "15px", display: "block"}}>
                           Github Profile:
                           <spacer />
                         </span>
-                        <a href={data.html_url}>{data.html_url}</a>
+                        <a href={data.html_url} style={{fontSize: "14px"}}>{data.html_url}</a>
                       </li>
                     </ul>
                   </div>
@@ -230,7 +232,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
         </div>
       ) : (
         <div >
-          <img src={undraw} style={{width: 1500, height: 400, marginTop: 40}}></img>
+          <img src={undraw} style={{width: 900, height: 300, marginTop: 30}}></img>
           </div>
       )}
     </div>
