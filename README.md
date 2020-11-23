@@ -1,7 +1,9 @@
 
 # 👣 Git Set Go
 ### 😃😃 A Github profile resume generator. ✨
-
+![gitsetgo](https://socialify.git.ci/garimasingh128/gitsetgo/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&language=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Dark)
+<br/>
+<br/>
 ![Demo](./demo/demo.gif)
 
 
