@@ -29,6 +29,8 @@
 
 A Github Resume generator 👨‍💻👩‍ to create your own personalised resume based on your Github profile. 🔎 This tool lets you have your resume on a single click.
 
+# Gitter Channel 💻👩‍
+Join here for all discussions: https://gitter.im/KWoC2020/GitSetGo
 
 # This project is a part of Hakin Codes 2020 👣
   OPEN SOURCE CONTEST - Hakin Codes
