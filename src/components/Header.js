@@ -3,6 +3,7 @@ import styled from "styled-components";
 import logo from "./images/daftpunktocat.gif";
 import '../App.css';
 
+
 const Header = () => {
   return (
     
@@ -17,12 +18,16 @@ const Header = () => {
           alt=""
         />
       </nav>
-     {" "}
+     {""}
+     <spacer/> <spacer/>
+     <center>
+     
       <nav class="navbar navbar-light head" style={{ background: "#343a40" }}>
         <a
           href="./"
           style={{ color: "#ffffff" }}
           class="head-line"
+
         >
           Git Set Go
         </a>{" "}
@@ -31,7 +36,7 @@ const Header = () => {
       <spacer /> <spacer /> <spacer /> <spacer /> <spacer />{" "}
         <nav class="navbar navbar-dark bg-dark subhead">
           {" "}
-          <p style={{ fontSize: 15 }}>
+          <p className="nav-text">
             A Personalised Github Resume{" "}
           </p>
         </nav>{" "}
