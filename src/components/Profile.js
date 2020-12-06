@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import DisplayCard from "./DisplayCard";
 
 import Loader from "./images/Loader.svg";
@@ -50,8 +51,8 @@ const Profile = () => {
   };
 
   return (
-    <>
-      <div style={{ padding: 20 }}>
+    <ProfileC>
+      <div style={{ padding: 20 }} >
         <div className="ui search">
           {isLoading ? (
             <div style={{ marginTop: "100px" }}>
@@ -79,6 +80,7 @@ const Profile = () => {
                 <i className="github icon"></i>
                 Go ahead!
               </button>
+
               <div>
             {errorMessage ? (
               <center>
@@ -92,9 +94,7 @@ const Profile = () => {
               </center>
             ) : (
               <center>
-
                 <DisplayCard
-
                   data={data}
                   repositories={repositories}
                   langs={langs}
@@ -103,8 +103,22 @@ const Profile = () => {
               </center>
           )}
           </div>
+         )}
+        </div>
       </div>
-    </>
+    </ProfileC>
   );
 };
 export default Profile;
+const ProfileC= styled.div`
+  @media screen and (max-width:425px){
+    .search{
+      margin-top:15px;
+    }
+    .violet{
+      margin-left: 10px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  }
+`;
