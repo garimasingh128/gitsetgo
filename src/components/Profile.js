@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import styled from "styled-components";
 import DisplayCard from "./DisplayCard";
@@ -51,15 +52,15 @@ const Profile = () => {
   };
 
   return (
-    <ProfileC>
-      <div style={{ padding: 20 }} >
+    <div>
+      <div style={{ padding: 20 }}>
         <div className="ui search">
           {isLoading ? (
-            <div style={{ marginTop: "100px" }}>
+            <div style={{ marginTop: "60px" }}>
               <object type="image/svg+xml" data={Loader} />
             </div>
           ) : (
-            <>
+            <div>
               <div className="ui icon input">
                 <i className="search icon"></i>
                 <input
@@ -75,18 +76,16 @@ const Profile = () => {
                 style={{ marginLeft: 20 }}
                 className="ui violet button"
                 type="submit"
-                onClick={submitHandler}
-              >
+                onClick={submitHandler}>
                 <i className="github icon"></i>
                 Go ahead!
               </button>
-
-              <div>
+            <div>
             {errorMessage ? (
               <center>
                 <img
-                  src={image}
-                  alt={image}
+                  src={this.image}
+                  alt={this.image}
                   style={{width: 250, height: 100, marginTop: 40}}
                   >
                 </img>
@@ -101,14 +100,14 @@ const Profile = () => {
                   orgs={orgs}
                   />
               </center>
-          )}
-          </div>
-         )}
+            )}
+              </div>
+           </div>)}
         </div>
       </div>
-    </ProfileC>
-  );
-};
+    </div>
+     );
+ };
 export default Profile;
 const ProfileC= styled.div`
   @media screen and (max-width:425px){

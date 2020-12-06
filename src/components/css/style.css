@@ -32,10 +32,12 @@ img {
 a {
   text-decoration: none;
   outline: none;
-  color: rgb(35, 54, 224); }
+  color: rgba(58, 71, 189, 0.603); 
+}
 
 a:hover {
   color: #444;
+  text-decoration: none;
 }
 
 ul {
@@ -319,11 +321,15 @@ body {
 }
 
 .profile-box .left-side {
-  background-color: #5829bb;
+  background-color: #19a093;
   color: #fff;
   padding: 40px 20px;
 }
-
+.profile-box .left-side:hover{
+  background-color: #19a092dc;
+  color: #fff;
+  padding: 40px 20px;
+}
 .profile-box .left-side .profile-info {
   padding: 5px;
   box-shadow:
@@ -574,18 +580,34 @@ tr, td, th {
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
 table {
+  
   border-collapse: collapse;
-  width: 70%;
+  width: 90%;
   color: #706d6e;
 }
 th {
-  height: 20px;
+  height: 30px;
   text-align: left;
-  background-color: #5829bb;
+  background-color: #009688;
   color: white;
 }
 
-
+h2 {
+  border: 1px solid #009688;
+  background-color: #009688;
+  color: white;
+  border-radius: 25px;
+  width: 80%;
+  padding: 15px;
+}
+h2:hover {
+  border: 1px solid #19a093;
+  background-color: #19a093;
+  color: white;
+  border-radius: 25px;
+  width: 70%;
+  padding: 15px;
+}
 
     .nav-header{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
