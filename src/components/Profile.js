@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
+import styled from "styled-components";
 import DisplayCard from "./DisplayCard";
 
 import Loader from "./images/Loader.svg";
@@ -92,9 +93,7 @@ const Profile = () => {
               </center>
             ) : (
               <center>
-
                 <DisplayCard
-
                   data={data}
                   repositories={repositories}
                   langs={langs}
@@ -110,3 +109,15 @@ const Profile = () => {
      );
  };
 export default Profile;
+const ProfileC= styled.div`
+  @media screen and (max-width:425px){
+    .search{
+      margin-top:15px;
+    }
+    .violet{
+      margin-left: 10px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  }
+`;

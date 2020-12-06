@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
+import styled from "styled-components";
 import "./css/animate.css";
 import "./css/bootstrap.min.css";
 import "./css/bootstrap.min.css.map";
@@ -51,6 +52,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
   ))
 
   return (
+
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
       {data.name ? (
         <div>
@@ -63,7 +65,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
           >
             {({ toPdf }) => (
               <button
-                style={{ marginLeft: 20, marginTop: 20 }}
+                style={{ marginLeft: 10, marginTop: 20 }}
                 className="ui red button"
                 type="submit"
                 onClick={toPdf}
@@ -73,7 +75,8 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
               </button>
             )}
           </ReactToPdf>
-          <div className="container profile-box" ref={ref} style = { {marginTop: 40}}>
+          <Generate>
+          <div className="container profile-box card" ref={ref}>
             <div className="row">
               <div className="col-md-4 left-co" >
                 <div className="left-side">
@@ -111,12 +114,32 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                     <div> </div>
                   )}
 
-                  <div className="contact-box pb0">
+                  <div className="contact-box pb-3 d-flex justify-content-center ltitle">
                     <div className="icon">
                       <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>
                     </div>
                     <div className="detail">{data.location}</div>
                   </div>
+
+                  {
+                    data.twitter_username === null ? '' : 
+                    <div>
+                      <ul className="refer-cov">
+                        <li className="text-center"> @{data.twitter_username}</li>
+                      </ul>
+                      <h4 className="ltitle">Twitter</h4>
+                    </div>
+                  }
+                  
+                  {
+                    data.company === null ? '' : 
+                    <div>
+                      <div className="refer-cov">
+                        <b>{data.company}</b>
+                      </div>
+                      <h4 className="ltitle">Organisations</h4>
+                    </div>
+                  }                                                  
 
                   <h4 className="ltitle">Twitter</h4>
                   <ul className="row social-link no-margin">
@@ -137,6 +160,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                         ></img>
                       </a>
                   ))}</div>
+
 
                   <h4 className="ltitle">
                     Followers: <i className="fas fa-pencil-alt"></i>
@@ -171,6 +195,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
                     <i className="far fa-user"></i>About
                   </h2>
                   <div className="about">
+
                     <p style={{fontSize:"17px", textAlign:"center", width: "99%", color: "black"}}>{data.bio}</p>
                   </div><br></br>
                   <h2 className="rit-titl">
@@ -229,6 +254,7 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
               </div>
             </div>
           </div>
+          </Generate>
         </div>
       ) : (
         <div >
@@ -240,5 +266,13 @@ const DisplayCard = ({ data, repositories, langs, orgs }) => {
 };
 
 export default DisplayCard;
+const Generate = styled.div`
+  @media screen and (max-width:1060px) {
+    .card{
+      margin-top: 40px;
+    }
+
+  }
+`;
 
 //https://api.github.com/users/garimasingh128/repos
