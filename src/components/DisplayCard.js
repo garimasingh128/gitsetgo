@@ -19,7 +19,7 @@ import ReactToPdf from "react-to-pdf";
 // get our fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const ref = React.createRef();
 const options = {
@@ -76,7 +76,7 @@ const DisplayCard = ({ data, repositories }) => {
 
                   <div className="contact-box pb0">
                     <div className="icon">
-                      <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faMapMarkerAlt}></FontAwesomeIcon>
                     </div>
                     <div className="detail">{data.location}</div>
                   </div>
@@ -195,9 +195,12 @@ const DisplayCard = ({ data, repositories }) => {
           </div>
         </div>
       ) : (
-        <div >
-          <img src={undraw} style={{width: 1500, height: 400, marginTop: 40}}></img>
-          </div>
+        <div>
+          <img
+            src={undraw}
+            style={{ width: 1500, height: 400, marginTop: 40 }}
+          ></img>
+        </div>
       )}
     </div>
   );
