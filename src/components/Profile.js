@@ -35,7 +35,7 @@ const Profile = () => {
         setRepositories(repoJson);
       }
     }  catch(e) {
-      throw new Error("Something went wrong");
+      
     }
   };
 
