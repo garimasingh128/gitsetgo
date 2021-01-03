@@ -19,7 +19,7 @@ const Profile = () => {
     try {
       const profile = await fetch(`https://api.github.com/users/${username}`);
       if(!profile.ok) {
-        setError(true)
+        setError(true);
         throw new Error("User Not Found");
       } 
       const profileJson = await profile.json();
@@ -35,13 +35,13 @@ const Profile = () => {
         setRepositories(repoJson);
       }
     }  catch(e) {
-      console.log(e)
+      throw new Error("Something went wrong");
     }
   };
 
   const closeAlert = () => {
-    setError(false)
-  }
+    setError(false);
+  };
   return (
     <>
       <div style={{ padding: 20 }} >
