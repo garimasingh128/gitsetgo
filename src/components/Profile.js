@@ -15,28 +15,23 @@ const Profile = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-
-    try {
-      const profile = await fetch(`https://api.github.com/users/${username}`);
-      if(!profile.ok) {
-        setError(true);
-        throw new Error("User Not Found");
-      } 
-      const profileJson = await profile.json();
-      console.log(profileJson);
-      const repositories = await fetch(profileJson.repos_url);
-      const repoJson = await repositories.json();
-      console.log(repoJson);
-      if(!profileJson.name) {
-        setError(true);
-      }
-      if (profileJson) {
-        setData(profileJson);
-        setRepositories(repoJson);
-      }
-    }  catch(e) {
-      
+    const profile = await fetch(`https://api.github.com/users/${username}`);
+    if(!profile.ok) {
+      setError(true);
+    } 
+    const profileJson = await profile.json();
+    console.log(profileJson);
+    const repositories = await fetch(profileJson.repos_url);
+    const repoJson = await repositories.json();
+    console.log(repoJson);
+    if(!profileJson.name) {
+      setError(true);
     }
+    if (profileJson) {
+      setData(profileJson);
+      setRepositories(repoJson);
+    }
+    
   };
 
   const closeAlert = () => {
