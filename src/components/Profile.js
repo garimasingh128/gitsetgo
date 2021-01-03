@@ -28,7 +28,7 @@ const Profile = () => {
       const repoJson = await repositories.json();
       console.log(repoJson);
       if(!profileJson.name) {
-        setError(true)
+        setError(true);
       }
       if (profileJson) {
         setData(profileJson);
