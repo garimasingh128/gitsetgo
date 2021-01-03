@@ -19,7 +19,7 @@ const Alert = ({closeAlert, alertMsg}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Alert;
