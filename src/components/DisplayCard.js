@@ -26,9 +26,28 @@ const options = {
   unit: "cm",
 };
 
-const DisplayCard = ({ data, repositories }) => {
+const DisplayCard = ({ data, repositories, error, closeAlert }) => {
   return (
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
+      {error === true ? (
+        <div className="row justify-content-center" 
+          style={{ marginTop: 20 }}
+        >
+          <div className="col-6 align-self-center">
+          <div className="alert alert-danger alert-dismissible" role="alert">
+            <button 
+              type="button" 
+              className="close" 
+              data-dismiss="alert" 
+              aria-label="Close"
+              onClick={closeAlert}>
+                <span aria-hidden="true">&times;</span>
+              </button>
+            User Not Found.
+          </div>
+          </div>
+        </div>
+      ) : null}
       {data.name ? (
         <div>
           <ReactToPdf
