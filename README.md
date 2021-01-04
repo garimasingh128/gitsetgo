@@ -1,8 +1,10 @@
 
 # 👣 Git Set Go
-### 🧐 A Github profile resume generator. ✨
-
-![Demo](demo.gif)
+### 😃😃 A Github profile resume generator. ✨
+![gitsetgo](https://socialify.git.ci/garimasingh128/gitsetgo/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&language=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Dark)
+<br/>
+<br/>
+![Demo](./demo/demo.gif)
 
 
 
@@ -22,10 +24,38 @@
 
 <div align="center">
 
-<img src="ss.png" width="600">
+<img src="./demo/ss.png" width="600">
 </div>
 
 A Github Resume generator 👨‍💻👩‍ to create your own personalised resume based on your Github profile. 🔎 This tool lets you have your resume on a single click.
+
+# Gitter Channel 💻👩‍
+Join here for all discussions: https://gitter.im/KWoC2020/GitSetGo
+
+# This project is a part of Hakin Codes 2020 👣
+  OPEN SOURCE CONTEST - Hakin Codes
+  ### About HakinCodes 2020 💻
+  HakinCodes is founded with a vision to impart technical knowledge with practical implementations to all the students and developers around.
+
+At HakinCodes it's our mission to provide guidance to the participants from the mentors who are highly skilled and experienced in particular stacks whether be it technical or non-technical.
+
+At HakinCodes we are always here to solve any issues regarding the projects and providing golden opportunities to everyone who wants to improve their skills.
+
+HakinCodes would always provide cutting edge experience to every developer in moving a step closer towards achieving their dreams.
+
+HakinCodes will always try to maintain a positive attitude towards achieving higher goals and objectives.
+
+At HakinCodes we maintain a trustworthy and healthy environment and respect each other's privacy 
+
+<div align="center">
+
+<img src="./demo/HakinCodes Logo.png" width="300" height="300">
+</div>
+
+
+
+
+⭐ [Check out the website of HackinCodes 2020](https://hakincodes.tech)
 
 ## 📋 Table of Contents
  ➡️   [Vision](#-vision)
@@ -98,15 +128,35 @@ The [Roadmap](https://www.figma.com/file/czzHjTUJS94Rl676D8up5s/GitSetGo?node-id
 ## 📝 Learning Resources
 
 Read these articles to get a quick grab on handling Github API's and other technologies used in the project:
+
+### Resources for learning React.js:
+- https://reactresources.com
+- https://reactjs.org/community/external-resources.html
+- https://reactjs.org/docs/getting-started.html
+- https://github.com/enaqx/awesome-react
+
+### Migrating from Rest API to GraphQL API:
+- https://developer.github.com/v4/guides/migrating-from-rest/
+- https://docs.github.com/en/graphql
+
+### Resources for Github APIs':
 - https://developer.github.com/v3/ 
 - https://developer.github.com/v4/ 
 - https://github.com/octokit/rest.js/ 
 - https://github.com/octokit/graphql.js
+
+### Resources for node.js:
+- https://nodejs.org/en/about/resources/
+- https://github.com/sindresorhus/awesome-nodejs
+- https://www.tutorialsteacher.com/nodejs/nodejs-resources
+
+### Resources for Prettier.io used in the project
 - [Prettier.io used in the project](https://prettier.io)
 
-
-Resources to learn Git:
--  https://try.github.io/
+### Resources to learn Git and Github:
+- https://try.github.io/
+- https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources
+- https://guides.github.com/activities/hello-world/
 
 ## ✨ Future Plans
 - Github Timeline 
