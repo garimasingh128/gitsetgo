@@ -15,7 +15,7 @@ import "./js/popper.js";
 
 import ReactDOM from "react-dom";
 import ReactToPdf from "react-to-pdf";
-
+import Alert from "./Alert";
 // get our fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
@@ -26,9 +26,15 @@ const options = {
   unit: "cm",
 };
 
-const DisplayCard = ({ data, repositories }) => {
+const DisplayCard = ({ data, repositories, error, closeAlert }) => {
   return (
     <div className="container-fluid overcover" style={{ marginBottom: 100 }}>
+      {error === true ? (
+        <Alert 
+          closeAlert={closeAlert} 
+          alertMsg={"Username does not exist."}
+        />
+      ) : null}
       {data.name ? (
         <div>
           <ReactToPdf

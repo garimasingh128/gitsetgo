@@ -7,6 +7,7 @@ const Profile = () => {
   const [data, setData] = useState({});
   const [username, setUsername] = useState("");
   const [repositories, setRepositories] = useState([]);
+  const [error, setError] = useState(false);
 
   const onChangeHandler = (e) => {
     setUsername(e.target.value);
@@ -14,19 +15,27 @@ const Profile = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-
     const profile = await fetch(`https://api.github.com/users/${username}`);
+    if(!profile.ok) {
+      setError(true);
+    } 
     const profileJson = await profile.json();
     console.log(profileJson);
-
     const repositories = await fetch(profileJson.repos_url);
     const repoJson = await repositories.json();
     console.log(repoJson);
-
+    if(!profileJson.name) {
+      setError(true);
+    }
     if (profileJson) {
       setData(profileJson);
       setRepositories(repoJson);
     }
+    
+  };
+
+  const closeAlert = () => {
+    setError(false);
   };
   return (
     <>
@@ -56,9 +65,10 @@ const Profile = () => {
           <center>
             
             <DisplayCard
-           
+              error={error}
               data={data}
               repositories={repositories}
+              closeAlert={closeAlert}
             />
           </center>
         </div>
