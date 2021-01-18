@@ -1,0 +1,17 @@
+.footer {
+  background: #343a40;
+  padding-top: 5px;
+}
+
+.name {
+  color: #59b7ff;
+}
+
+.git-footer {
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+
+.git-footer a {
+  margin: 0 10px;
+}
