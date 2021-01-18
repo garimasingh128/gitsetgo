@@ -1,15 +1,15 @@
 import React from 'react'
-import '../css/animate.css'
-import '../css/bootstrap.min.css'
-import '../css/bootstrap.min.css.map'
+import '../../assets/css/animate.css'
+import '../../assets/css/bootstrap.min.css'
+import '../../assets/css/bootstrap.min.css.map'
 // import "./css/fontawsom-all.min.css";
-import '../css/style.css'
-import undraw from '../images/undraw2.svg'
+import '../../assets/css/style.css'
+import undraw from '../../assets/images/undraw2.svg'
 // import '../css/style.css.map'
 import CSSModuleMapper from '../../utils/cssModuleMapper'
 import styles from './DisplayCard.module.css'
 
-import '../js/popper.js'
+import '../../assets/js/popper.js'
 // import "./js/jquery-3.2.1.min.js";
 // import "./js/popper.min.js";
 // import "./js/bootstrap.min.js";

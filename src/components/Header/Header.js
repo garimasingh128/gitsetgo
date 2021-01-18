@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../images/daftpunktocat.gif'
+import logo from '../../assets/images/daftpunktocat.gif'
 import styles from './Header.module.css'
 import CSSModuleMapper from '../../utils/cssModuleMapper'
 
