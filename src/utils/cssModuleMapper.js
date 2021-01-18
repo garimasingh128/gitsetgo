@@ -3,7 +3,9 @@
  */
 
 /**
- * Function for join multiple CSS Modules classes
+ * Function for join multiple CSS Modules classes without typing
+ * crazy string literal
+ * e.g. `${styles.foo} ${styles.bar}` become `css('foo', 'bar')`
  *
  * @param {CSSModule} styles Default export from '*.module.css' files
  *
