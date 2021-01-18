@@ -1,12 +1,10 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 
 // download html2canvas and jsPDF and save the files in app/ext, or somewhere else
 // the built versions are directly consumable
 // import {html2canvas, jsPDF} from 'app/ext';
 import html2canvas from "html2canvas";
 import * as jsPDF from "jspdf";
-
-import Profile from "../Profile";
 
 export default class Export extends Component {
   constructor(props) {

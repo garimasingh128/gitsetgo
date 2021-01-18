@@ -15,7 +15,6 @@ import "../../assets/js/popper.js";
 // import "./js/bootstrap.min.js";
 // import "./js/script.js";
 
-import ReactDOM from "react-dom";
 import ReactToPdf from "react-to-pdf";
 
 // get our fontawesome imports
@@ -203,7 +202,11 @@ const DisplayCard = ({ data, repositories }) => {
         </div>
       ) : (
         <div>
-          <img src={undraw} className={css("undraw")}></img>
+          <img
+            alt="woman with giant iphone"
+            src={undraw}
+            className={css("undraw")}
+          ></img>
         </div>
       )}
     </div>
