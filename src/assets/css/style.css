@@ -6,19 +6,22 @@ Version: 1.0
 coder name:Prabin Raja
 Description: This Template is created for web template
 ======================================================================= */
+
 /* ===================================== Import Less ================================== */
 @font-face {
   font-family: 'mouse-300';
   src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'mouse-500';
   src: url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
 }
+
 /* ===================================== Basic CSS ================================== */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -71,7 +74,7 @@ body {
 }
 
 p {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   width: 100%;
 }
 
@@ -128,16 +131,19 @@ body {
   padding: 30px;
   margin: 0px;
 }
+
 .session-title h2 {
   width: 100%;
   text-align: center;
 }
+
 .session-title p {
   max-width: 850px;
   text-align: center;
   float: none;
   margin: auto;
 }
+
 .session-title span {
   float: right;
   font-style: italic;
@@ -145,15 +151,17 @@ body {
 
 .inner-title {
   padding: 20px;
-  padding-left: 0px;
+  padding-left: 0;
   margin-bottom: 30px;
 }
+
 .inner-title h2 {
   width: 100%;
   text-align: center;
   font-size: 2rem;
   font-family: 'slab', Arial, Helvetica, sans-serif;
 }
+
 .inner-title p {
   width: 100%;
   text-align: center;
@@ -164,31 +172,37 @@ body {
   text-align: center;
   padding-top: 160px;
 }
+
 .page-nav ul {
   float: none;
   margin: auto;
 }
+
 .page-nav h2 {
   font-size: 36px;
   width: 100%;
   color: #444;
 }
+
 @media screen and (max-width: 600px) {
   .page-nav h2 {
     font-size: 26px;
   }
 }
+
 .page-nav ul li {
   float: left;
   margin-right: 10px;
   margin-top: 10px;
   font-size: 16px;
 }
+
 .page-nav ul li i {
   width: 30px;
   text-align: center;
   color: #444;
 }
+
 .page-nav ul li a {
   color: #444;
 }
@@ -197,14 +211,17 @@ body {
   background-color: #00ab9f;
   border-color: #00ab9f;
 }
+
 .btn-success:hover {
   background-color: #00ab9f !important;
   border-color: #00ab9f !important;
 }
+
 .btn-success:active {
   background-color: #00ab9f !important;
   border-color: #00ab9f !important;
 }
+
 .btn-success:focus {
   background-color: #00ab9f !important;
   border-color: #00ab9f !important;
@@ -215,14 +232,17 @@ body {
   background-color: #4f6dcd;
   border-color: #4f6dcd;
 }
+
 .btn-info:hover {
   background-color: #4f6dcd !important;
   border-color: #4f6dcd !important;
 }
+
 .btn-info:active {
   background-color: #4f6dcd !important;
   border-color: #4f6dcd !important;
 }
+
 .btn-info:focus {
   background-color: #4f6dcd !important;
   border-color: #4f6dcd !important;
@@ -230,14 +250,16 @@ body {
 }
 
 .btn {
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  box-shadow:
+    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   border-radius: 2px;
 }
 
 .form-control:focus {
   box-shadow: none !important;
-  border: 2px solid #00a8df;
+  border: 2px solid #0d7a40 !important;
 }
 
 .btn-light {
@@ -249,27 +271,9 @@ body {
   display: block !important;
 }
 
-.form-control:focus {
-  box-shadow: none;
-  border: 2px solid #0d7a40 !important;
-}
-
 .form-control {
   background-color: #f8f8f8;
   margin-bottom: 20px;
 }
-.form-control:focus {
-  background-color: #fff;
-  border-color: #ccc;
-}
 
-.container {
-  max-width: 1100px;
-}
-@media screen and (max-width: 1060px) {
-  .container {
-    max-width: 100%;
-    overflow: hidden;
-  }
-}
 /*# sourceMappingURL=style.css.map */

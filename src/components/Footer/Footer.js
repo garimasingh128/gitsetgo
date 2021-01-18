@@ -1,41 +1,41 @@
-import React from 'react'
-import styled from 'styled-components'
-import styles from './Footer.module.css'
-import CSSModuleMapper from '../../utils/cssModuleMapper'
+import React from "react";
+import styled from "styled-components";
+import styles from "./Footer.module.css";
+import CSSModuleMapper from "../../utils/cssModuleMapper";
 
-const css = CSSModuleMapper(styles)
+const css = CSSModuleMapper(styles);
 
 function Footer() {
   let color_scheme =
-    window.localStorage.getItem('theme') === 'light'
-      ? 'no-preference: light; light: ligth; dark: light;'
-      : 'no-preference: dark; dark: dark; light: dark;'
+    window.localStorage.getItem("theme") === "light"
+      ? "no-preference: light; light: ligth; dark: light;"
+      : "no-preference: dark; dark: dark; light: dark;";
   return (
-    <footer className={css('footer')}>
+    <footer className={css("footer")}>
       <center>
-        {' '}
+        {" "}
         Made with
         <heart> ❤ </heart> by
         <a
           target="_blank"
           href="https://github.com/garimasingh128"
-          className={css('name')}
+          className={css("name")}
         >
-          {' '}
-          Garima Singh{' '}
-        </a>{' '}
+          {" "}
+          Garima Singh{" "}
+        </a>{" "}
         and
         <a
           target="_blank"
           href="https://github.com/mrinal41298"
-          className={css('name')}
+          className={css("name")}
         >
-          {' '}
+          {" "}
           Mrinal
         </a>
       </center>
       <br />
-      <div className={css('git-footer')}>
+      <div className={css("git-footer")}>
         <a
           className="github-button"
           href="https://github.com/garimasingh128"
@@ -54,14 +54,14 @@ function Footer() {
         </a>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
 
 // data-color-scheme="no-preference: dark; light: dark; dark: dark;"
 // data-color-scheme="no-preference: dark; light: dark; dark: dark;"
 
 const heart = styled.div`
   color: red;
-`
+`;

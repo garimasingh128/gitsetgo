@@ -1,38 +1,38 @@
-import React, { useState } from 'react'
-import DisplayCard from '../DisplayCard'
-import styles from './Profile.module.css'
-import CSSModuleMapper from '../../utils/cssModuleMapper'
+import React, { useState } from "react";
+import DisplayCard from "../DisplayCard";
+import styles from "./Profile.module.css";
+import CSSModuleMapper from "../../utils/cssModuleMapper";
 
-const css = CSSModuleMapper(styles)
+const css = CSSModuleMapper(styles);
 
 const Profile = () => {
-  const [data, setData] = useState({})
-  const [username, setUsername] = useState('')
-  const [repositories, setRepositories] = useState([])
+  const [data, setData] = useState({});
+  const [username, setUsername] = useState("");
+  const [repositories, setRepositories] = useState([]);
 
   const onChangeHandler = (e) => {
-    setUsername(e.target.value)
-  }
+    setUsername(e.target.value);
+  };
 
   const submitHandler = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    const profile = await fetch(`https://api.github.com/users/${username}`)
-    const profileJson = await profile.json()
-    console.log(profileJson)
+    const profile = await fetch(`https://api.github.com/users/${username}`);
+    const profileJson = await profile.json();
+    // console.log(profileJson);
 
-    const repositories = await fetch(profileJson.repos_url)
-    const repoJson = await repositories.json()
-    console.log(repoJson)
+    const repositories = await fetch(profileJson.repos_url);
+    const repoJson = await repositories.json();
+    console.log(repoJson);
 
     if (profileJson) {
-      setData(profileJson)
-      setRepositories(repoJson)
+      setData(profileJson);
+      setRepositories(repoJson);
     }
-  }
+  };
   return (
     <>
-      <div className={css('page')}>
+      <div className={css("page")}>
         <div className="ui search">
           <div className="ui icon input">
             <i className="search icon"></i>
@@ -46,7 +46,7 @@ const Profile = () => {
           </div>
 
           <button
-            className={`ui violet button ${css('go-btn')}`}
+            className={`ui violet button ${css("go-btn")}`}
             type="submit"
             onClick={submitHandler}
           >
@@ -60,6 +60,6 @@ const Profile = () => {
         </div>
       </div>
     </>
-  )
-}
-export default Profile
+  );
+};
+export default Profile;

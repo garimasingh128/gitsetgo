@@ -1,15 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
-import logo from '../../assets/images/daftpunktocat.gif'
-import styles from './Header.module.css'
-import CSSModuleMapper from '../../utils/cssModuleMapper'
+import React from "react";
+import styled from "styled-components";
+import logo from "../../assets/images/daftpunktocat.gif";
+import styles from "./Header.module.css";
+import CSSModuleMapper from "../../utils/cssModuleMapper";
 
-const css = CSSModuleMapper(styles)
+const css = CSSModuleMapper(styles);
 
 const Header = () => {
   return (
     <NavbarC>
-      {' '}
+      {" "}
       <nav class="navbar navbar-dark bg-dark">
         <img
           src={logo}
@@ -18,23 +18,23 @@ const Header = () => {
           class="d-inline-block align-top"
           alt=""
         />
-      </nav>{' '}
-      <nav class={`navbar navbar-light ${css('navbar-bg')}`}>
-        <a href="./" className={css('brand')}>
+      </nav>{" "}
+      <nav class={`navbar navbar-light ${css("navbar-bg")}`}>
+        <a href="./" className={css("brand")}>
           Git Set Go
-        </a>{' '}
-      </nav>{' '}
-      <spacer /> <spacer /> <spacer /> <spacer /> <spacer />{' '}
+        </a>{" "}
+      </nav>{" "}
+      <spacer /> <spacer /> <spacer /> <spacer /> <spacer />{" "}
       <center>
         <nav class="navbar navbar-dark bg-dark">
-          {' '}
-          <p className={css('detail')}>A Personalised Github Resume </p>
+          {" "}
+          <p className={css("detail")}>A Personalised Github Resume </p>
         </nav>
-      </center>{' '}
+      </center>{" "}
     </NavbarC>
-  )
-}
-export default Header
+  );
+};
+export default Header;
 const NavbarC = styled.div`
   background: #343a40;
   color: #ffffff;
@@ -47,4 +47,4 @@ const NavbarC = styled.div`
   spacer {
     flex: 0.01;
   }
-`
+`;
