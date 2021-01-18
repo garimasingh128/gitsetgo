@@ -117,7 +117,7 @@ const DisplayCard = ({ data, repositories }) => {
                   </h4>
                 </div>
               </div>
-              <div className="col-md-8 rt-div">
+              <div className={`col-md-8 ${css('rt-div')}`}>
                 <div className={css('rit-cover')}>
                   <div className={css('hotkey')}>
                     <h1 className="">{data.name}</h1>
