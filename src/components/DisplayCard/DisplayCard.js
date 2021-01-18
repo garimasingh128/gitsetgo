@@ -203,10 +203,7 @@ const DisplayCard = ({ data, repositories }) => {
         </div>
       ) : (
         <div>
-          <img
-            src={undraw}
-            style={{ width: 1500, height: 400, marginTop: 40 }}
-          ></img>
+          <img src={undraw} className={css('undraw')}></img>
         </div>
       )}
     </div>
