@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "./images/daftpunktocat.gif";
+import logo from "../../assets/images/daftpunktocat.gif";
+import styles from "./Header.module.css";
+import CSSModuleMapper from "../../utils/cssModuleMapper";
+
+const css = CSSModuleMapper(styles);
+
 const Header = () => {
   return (
     <NavbarC>
@@ -13,13 +18,9 @@ const Header = () => {
           class="d-inline-block align-top"
           alt=""
         />
-      </nav>
-     {" "}
-      <nav class="navbar navbar-light " style={{ background: "#343a40" }}>
-        <a
-          href="./"
-          style={{ color: "#ffffff" }}
-        >
+      </nav>{" "}
+      <nav class={`navbar navbar-light ${css("navbar-bg")}`}>
+        <a href="./" className={css("brand")}>
           Git Set Go
         </a>{" "}
       </nav>{" "}
@@ -27,9 +28,7 @@ const Header = () => {
       <center>
         <nav class="navbar navbar-dark bg-dark">
           {" "}
-          <p style={{ fontSize: 15 }}>
-            A Personalised Github Resume{" "}
-          </p>
+          <p className={css("detail")}>A Personalised Github Resume </p>
         </nav>
       </center>{" "}
     </NavbarC>

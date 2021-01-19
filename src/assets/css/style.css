@@ -1,0 +1,279 @@
+/* =======================================================================
+Template Name: Dil Hospital
+Author:  SmartEye Adminpanel
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for web template
+======================================================================= */
+
+/* ===================================== Import Less ================================== */
+@font-face {
+  font-family: 'mouse-300';
+  src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mouse-500';
+  src: url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+}
+
+/* ===================================== Basic CSS ================================== */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444;
+}
+
+a:hover {
+  color: #444;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+p {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.hid {
+  display: none;
+}
+
+.top-mar {
+  margin-top: 15px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+::placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: 0.5 !important;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'mouse-500', Arial, Helvetica, sans-serif;
+}
+
+strong {
+  font-family: 'mouse-500', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f7f7ff !important;
+  font-family: 'mouse-300', Arial, Helvetica, sans-serif;
+  color: #6a6a6a;
+}
+
+.session-title {
+  padding: 30px;
+  margin: 0px;
+}
+
+.session-title h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.session-title p {
+  max-width: 850px;
+  text-align: center;
+  float: none;
+  margin: auto;
+}
+
+.session-title span {
+  float: right;
+  font-style: italic;
+}
+
+.inner-title {
+  padding: 20px;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.inner-title h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'slab', Arial, Helvetica, sans-serif;
+}
+
+.inner-title p {
+  width: 100%;
+  text-align: center;
+}
+
+.page-nav {
+  padding: 40px;
+  text-align: center;
+  padding-top: 160px;
+}
+
+.page-nav ul {
+  float: none;
+  margin: auto;
+}
+
+.page-nav h2 {
+  font-size: 36px;
+  width: 100%;
+  color: #444;
+}
+
+@media screen and (max-width: 600px) {
+  .page-nav h2 {
+    font-size: 26px;
+  }
+}
+
+.page-nav ul li {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.page-nav ul li i {
+  width: 30px;
+  text-align: center;
+  color: #444;
+}
+
+.page-nav ul li a {
+  color: #444;
+}
+
+.btn-success {
+  background-color: #00ab9f;
+  border-color: #00ab9f;
+}
+
+.btn-success:hover {
+  background-color: #00ab9f !important;
+  border-color: #00ab9f !important;
+}
+
+.btn-success:active {
+  background-color: #00ab9f !important;
+  border-color: #00ab9f !important;
+}
+
+.btn-success:focus {
+  background-color: #00ab9f !important;
+  border-color: #00ab9f !important;
+  box-shadow: none !important;
+}
+
+.btn-info {
+  background-color: #4f6dcd;
+  border-color: #4f6dcd;
+}
+
+.btn-info:hover {
+  background-color: #4f6dcd !important;
+  border-color: #4f6dcd !important;
+}
+
+.btn-info:active {
+  background-color: #4f6dcd !important;
+  border-color: #4f6dcd !important;
+}
+
+.btn-info:focus {
+  background-color: #4f6dcd !important;
+  border-color: #4f6dcd !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  box-shadow:
+    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border: 2px solid #0d7a40 !important;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #3f3f3f;
+}
+
+.collapse.show {
+  display: block !important;
+}
+
+.form-control {
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
