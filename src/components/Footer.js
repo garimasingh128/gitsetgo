@@ -1,13 +1,18 @@
-import React from "react";
-
+import React,{ useState } from "react";
 import styled from "styled-components";
+import {MdCancel} from "react-icons/md"
+import {HiMailOpen} from "react-icons/hi"
+import {AiFillGithub,AiOutlineTwitter} from "react-icons/ai"
 
 function Footer() {
   let color_scheme =
     window.localStorage.getItem("theme") === "light"
       ? "no-preference: light; light: ligth; dark: light;"
       : "no-preference: dark; dark: dark; light: dark;";
+  const [modal, setmodal] = useState(false);
+
   return (
+    <>
     <footer style={{ background: "#343a40" }}>
       <div style={{ marginTop: 5 }}>
         <center>
@@ -47,8 +52,36 @@ function Footer() {
             Follow @mrinal41298
           </a>
         </div>
+        <div className="contact">
+          <button onClick={()=> setmodal(!modal)}>Contact Us</button>
+        </div>
       </div>
     </footer>
+      {modal && <div className="bg-modal">
+        <div className="contactmodal">
+          <h1>CONTACT</h1>
+          <span class="cancel" onClick={()=> setmodal(!modal)}><MdCancel /></span>
+          <p className="underline"></p>
+          <div className="social">
+            <div className="link">
+              <a href="mailto: garingh128@gmail.com" target="_blank">
+                <span class="icon"><HiMailOpen /></span>
+                <span class="title">garingh128@gmail.com</span>
+              </a>
+              <a href="https://twitter.com/garysingh128" target="_blank">
+                <span class="icon"><AiOutlineTwitter /></span>
+                <span class="title">@garysingh128</span>
+              </a>
+              <a href="https://github.com/garimasingh128/" target="_blank">
+                <span class="icon"><AiFillGithub /></span>
+                <span class="title">garysingh128</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> }
+    </>
+    
   );
 }
 
