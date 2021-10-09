@@ -74,7 +74,7 @@ function Footer() {
               </a>
               <a href="https://github.com/garimasingh128/" target="_blank">
                 <span class="icon"><AiFillGithub /></span>
-                <span class="title">garysingh128</span>
+                <span class="title">garimasingh128</span>
               </a>
             </div>
           </div>
