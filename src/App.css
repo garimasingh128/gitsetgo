@@ -7,6 +7,103 @@
     pointer-events: none;
 }
 
+.contact{
+    position: absolute;
+    bottom: 20px;
+    right: 20px
+}
+
+.contact button{
+    border: none;
+    padding: 2px 6px;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px black;
+}
+
+.contact button:focus{
+    outline: none
+}
+
+.bg-modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    z-index: 1000;
+    width: 100%;
+}
+
+.contactmodal{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    max-width: 600px;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    animation: modal 0.2s ease-in-out 1;
+    padding: 6px 0px;
+}
+
+@keyframes modal {
+    0% {
+        left:50%;
+        transform: translate(-50%,-50%) scale(0, 0) ;
+    }
+    100% {
+        left:50%;
+        transform: translate(-50%,-50%) scale(1, 1) ;
+    }
+}
+
+.cancel{
+    font-size: 32px;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.contactmodal .underline {
+    height: 1px;
+    background: black;
+    width: 70%;
+    left: 15%;
+    position: relative;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: relative;
+    left: 30%;
+    text-align: left;
+    padding: 8px 6px;
+}
+
+.link a{
+    margin: 8px;
+}
+
+.link .icon {
+    font-size: 30px;
+    margin: 0px 10px;
+}
+
+.link .title {
+    font-size: 18px;
+    position: relative;
+    top: -6px;
+}
+
+.link .title:hover{
+    text-decoration: underline;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
